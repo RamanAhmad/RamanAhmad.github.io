@@ -26,7 +26,7 @@ plugins:
 
 # Disqus Comments
 disqus:
-    shortname: christianschuler
+    shortname: ramanahmad
 
 # Add a directory to hold misc pages, just to keep the root directory clean.
 include: ["_pages", "_portfolio", "_resources"]
