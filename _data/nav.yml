@@ -7,8 +7,8 @@
 - title: Projects
   href: projects.html
 
-- title: Publications
-  href: publications.html
+#- title: Publications
+#  href: publications.html
 
 - title: Events
   href: events.html

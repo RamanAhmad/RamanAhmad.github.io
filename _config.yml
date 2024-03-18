@@ -8,18 +8,18 @@ highlighter:      rouge
 excerpt_separator: <!--more-->
 
 # Config for your profile.
-title:            Christian Schuler's Personal Page # Site title
-name:             Christian Schuler              # Your name
-affiliation:      NLP-Enthusiast and Student at UHH              # Your name
+title:            Raman Ahmad's Personal Page # Site title
+name:             Raman Ahmad              # Your name
+affiliation:      NLP-Enthusiast and Student at HAW # Your name
 avatar:           /docs/pictures/profile-2023-christian.png   # Path to an avatar image
-author:           Christian Schuler
+author:           Raman Ahmad
 # The theme uses the baseurl throughout, which is useful for running the entire
 # site under a subdir, like for this GitHub Pages deployment as a project site.
 #baseurl: "/Users/doofnase/My_GitHub/christianschuler8989.github.io/"
 #TL;DR: Use baseurl when you are building a site that doesn’t sit at the root of the domain.
 # baseurl: "christianschuler8989.github.io/"
 baseurl: ""
-# url: "https://christianschuler8989.github.io"
+# url: "https://RamanAhmad.github.io"
 plugins:
   - jekyll-sitemap
   - jekyll-feed
