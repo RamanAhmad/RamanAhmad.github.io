@@ -10,9 +10,9 @@
 #  href: http://orcid.org/0000-0002-2686-6350
 #  icon: entypo/orcid_24x24.svg
 
-- caption: Google Scholar
-  href: https://scholar.google.com/citations?user=fDRwBrEAAAAJ&hl=en
-  icon: entypo/graduation-cap.svg
+#- caption: Google Scholar
+#  href: https://scholar.google.com/citations?user=fDRwBrEAAAAJ&hl=en
+#  icon: entypo/graduation-cap.svg
 
 - caption: Youtube
   href: https://www.youtube.com/@KurdiBiHesani
