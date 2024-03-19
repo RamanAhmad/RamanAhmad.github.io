@@ -1,7 +1,7 @@
 
 
 <div class="p-3 mb-2 bg-success text-white text-center">
-	<p><b>I am about to finish my bachelor's degree in computer science and plan to continue with my master's.!</b></p>
+	<p><b>I am about to finish my bachelor's degree in computer science and plan to continue with my master's!</b></p>
 </div>
 
 **This is my new home on the web! Here I can play around and show you a bit about the academic side of my life :D**
