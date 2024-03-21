@@ -8,4 +8,4 @@ tags:
   - conference
 ---
 
-Today my dear friend Raman and I travel to Frankfurt in order to attend the International Conference on Kurdish Linguistics! So psyched! :D
+Today my dear friend Christian and I travel to Frankfurt in order to attend the International Conference on Kurdish Linguistics! So psyched! :D
