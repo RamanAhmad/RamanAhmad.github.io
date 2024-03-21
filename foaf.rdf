@@ -16,7 +16,7 @@
 	<foaf:Person rdf:ID="me">
 		<foaf:name>Raman Ahmad</foaf:name>
 		<foaf:title>Mr</foaf:title>
-		<foaf:givenname>Rama</foaf:givenname>
+		<foaf:givenname>Raman</foaf:givenname>
 		<foaf:family_name>Ahmad</foaf:family_name>
 		<foaf:gender>male</foaf:gender>
 		<foaf:birthday rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1992-04-20</foaf:birthday>
