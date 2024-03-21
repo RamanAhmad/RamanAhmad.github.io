@@ -42,38 +42,8 @@ title: Events
 					</td>
 				</tr> 
 				<tr> <!-- #2 -->
-					<td class="w-25" rowspan="1">
-						<a href="/docs/pictures/2024-ESSV-Christian.jpg" target="_blank"><img src="/docs/pictures/2024-ESSV-Christian.jpg" class="img-fluid img-thumbnail" alt="EASIER Autumn School"></a>
-					</td>
-					<td>
-						<p>
-							⏱ 06.-08. March, 2024 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📝 English & German
-						</p>
-						<p>
-							📍 
-							<a href="https://www.oth-regensburg.de/" target="_blank">
-								Eastern Bavarian Technical University of Applied Sciences Regensburg, Regensburg, Germany
-							</a>	
-						</p>
-						<p>
-							💡 Conference spanning a wide range of fields that concern the creation, analysis, and (digital) processing of speech signals, with a special focus on applied research, i.e. practical applications and technologies.
-						</p>
-					</td>
-				</tr>
-				<tr> <!-- #3 -->
-					<td class="w-25" rowspan="1">
-						<p>
-							<a href="/docs/pictures/construction-itsupport.png" target="_blank"><img src="/docs/pictures/construction-itsupport.png" width="150" class="img-fluid img-thumbnail" alt="ESSV-2024 Paper Presentation"></a>
-						</p>
-					</td>
-					<td>
-						<p>
-							⭐ (Paper Presentation) Can We See Your Response Before You Speak? Exploring Linguistic Information Found In Inter-Utterance Pauses.
-						</p>
-						<p>			    
-							Here I presented the paper about processing pause contents that we (Christian Schuler, Shravan Nayak, Debjoy Saha, Timo Baumann) had submitted. 
-						</p>
-					</td>
+				
+				
 				</tr>
 				<tr> <!-- #4 -->
 					<td class="w-100" colspan="2">
