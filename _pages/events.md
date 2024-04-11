@@ -69,7 +69,7 @@ title: Events
 							💡 Conference aimed at the low-resource language Kurdish and any neighboring or contacting languages with a linguistic focus.
 						</p>
 						<p>
-							💬 Here, Raman and I presented our projects as part of the poster session.
+							💬 Here, Christian and I presented our projects as part of the poster session.
 							We had an amazing time and got to meet so many awesome people that we can't wait to see again in two years at the 7th ICKL! :D	
 						</p>
 					</td>
