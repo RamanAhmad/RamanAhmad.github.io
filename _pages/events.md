@@ -30,20 +30,7 @@ title: Events
     	<div class="col-12">
 			<table class="table table-image table-responsive">
 			<tbody>
-				<!-- 2024 ESSV ##################################################### -->
-				<tr> <!-- #1 -->
-					<td class="w-100" colspan="2">
-						<b>
-							<a href="https://www.essv.de/essv2024/Main/HomePage?setlang=en" target="_blank">
-								ESSV-2024
-							</a>
-							- 35th. Conference on Electronic Speech Signal Processing
-						</b>
-					</td>
-				</tr> 
-
-					
-							<p>
+			
 							<a href="https://www.uni-frankfurt.de/141901385/ContentPage_141901385?" target="_blank">
 								6th International Conference on Kurdish Linguistics
 							</a>
