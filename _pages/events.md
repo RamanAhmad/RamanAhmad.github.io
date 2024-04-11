@@ -32,11 +32,12 @@ title: Events
 			<tbody>
 			<tr>
 				<td>
-							<a href="https://www.uni-frankfurt.de/141901385/ContentPage_141901385?" target="_blank">
+				<b>
+				<a href="https://www.uni-frankfurt.de/141901385/ContentPage_141901385?" target="_blank">
 								6th International Conference on Kurdish Linguistics
 							</a>
 						</b>
-					</td>
+				</td>
 				</tr>
 				<tr> <!-- #2 -->
 					<td class="w-25" rowspan="1">
