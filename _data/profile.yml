@@ -10,6 +10,10 @@
   href: https://www.linkedin.com/in/raman-ahmad-5243ab30b/
   icon: entypo/linkedin-with-circle.svg
 
+- caption: ORCID
+  href: https://orcid.org/0009-0001-8012-3945
+  icon: entypo/orcid_24x24.svg
+
 #- caption: Google Scholar
 #  href: https://scholar.google.com/citations?user=fDRwBrEAAAAJ&hl=en
 #  icon: entypo/graduation-cap.svg
@@ -17,6 +21,7 @@
 - caption: Youtube
   href: https://www.youtube.com/c/Kurd%C3%AEBiH%C3%AAsan%C3%AE
   icon: entypo/youtube-with-circle.svg
+
 
 
 #- caption: Research Gate
