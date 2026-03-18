@@ -2,14 +2,37 @@
 <html lang="de" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Raman Ahmad – Publikationen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raman Ahmad | Publikationen – NLP & Kurdologie</title>
+  <meta name="description" content="Wissenschaftliche Publikationen von Raman Ahmad zu NLP, maschineller Übersetzung und der kurdischen Sprache Kurmanji.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://raman-ahmad.de/publikationen.html">
+  <meta property="og:title" content="Raman Ahmad | Publikationen – NLP & Kurdologie">
+  <meta property="og:description" content="Wissenschaftliche Publikationen von Raman Ahmad zu NLP, maschineller Übersetzung und der kurdischen Sprache Kurmanji.">
+  <meta property="og:image" content="https://raman-ahmad.de/assets/profile.jpg">
+  <meta property="og:url" content="https://raman-ahmad.de/publikationen.html">
+  <meta property="og:type" content="website">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Raman Ahmad",
+    "jobTitle": "Fullstack Developer & NLP-Forscher",
+    "url": "https://raman-ahmad.de",
+    "image": "https://raman-ahmad.de/assets/profile.jpg",
+    "sameAs": [
+      "https://github.com/RamanAhmad",
+      "https://www.linkedin.com/in/raman-ahmad-5243ab30b/",
+      "https://orcid.org/0009-0001-8012-3945"
+    ]
+  }
+  </script>
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       darkMode: 'class',
-      theme: { extend: { colors: { primary: '#22c55e' } } }
+      theme: { extend: { colors: { primary: '#2563eb' } } }
     }
   </script>
 
@@ -268,6 +291,11 @@
       <!-- Divider -->
       <div class="border-t border-gray-800 pt-6 text-center text-sm">
         <p data-i18n="footer.copyright">© 2026 Raman Ahmad – Alle Rechte vorbehalten.</p>
+        <div class="mt-2 flex justify-center gap-4 text-gray-500">
+          <a href="impressum.html" class="hover:text-primary transition">Impressum</a>
+          <span>·</span>
+          <a href="datenschutz.html" class="hover:text-primary transition">Datenschutz</a>
+        </div>
       </div>
     </div>
   </footer>
@@ -375,7 +403,7 @@
       z-index: 99;
       width: 44px;
       height: 44px;
-      background: #22c55e;
+      background: #2563eb;
       color: white;
       border: none;
       border-radius: 50%;
@@ -440,7 +468,7 @@
       if (a.getAttribute('href') === page) {
         a.classList.add('text-primary', 'font-semibold');
         // add a subtle underline indicator on desktop
-        a.style.borderBottom = '2px solid #22c55e';
+        a.style.borderBottom = '2px solid #2563eb';
         a.style.paddingBottom = '2px';
       }
     });
