@@ -197,100 +197,115 @@
   </script>
 
   <main class="flex-grow pt-6 pb-16">
+  <!-- ══ PAGE HERO ══ -->
+  <div class="pt-6 pb-10 text-center bg-gradient-to-b from-gray-100 dark:from-gray-900/60 to-transparent">
+  </div>
 
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-10">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 data-i18n="cv.title" class="text-5xl md:text-6xl font-bold text-center mb-8">Curriculum Vitae</h1>
+      <p data-i18n="cv.subtitle" class="text-center text-xl text-gray-600 dark:text-gray-400 mb-16">Akademischer und beruflicher Werdegang, Kenntnisse und persönliche Daten.</p>
 
-      <!-- Hero -->
-      <h1 data-i18n="cv.title" class="text-5xl md:text-6xl font-bold text-center mb-4">Curriculum Vitae</h1>
-      <p class="text-center text-xl text-gray-500 dark:text-gray-400 mb-16">Beruflicher Werdegang, Studium &amp; Kenntnisse</p>
+      <!-- ══ TIMELINE WRAPPER ══ -->
+      <div class="relative pl-10">
 
-      <!-- ══ TIMELINE ══ -->
-      <div class="relative">
+        <!-- Vertikale Linie links -->
+        <div class="absolute left-3 top-0 bottom-0 w-0.5 bg-primary/25"></div>
 
-        <!-- Vertikale Linie -->
-        <div class="absolute left-6 md:left-1/2 top-0 bottom-0 w-0.5 bg-primary/20 transform md:-translate-x-0.5"></div>
-
-        <!-- ── Station 1: Aktuelle Stelle ── -->
-        <div class="relative flex flex-col md:flex-row md:justify-end gap-6 md:gap-0 mb-14 md:pr-[calc(50%+2rem)] pl-16 md:pl-0">
+        <!-- ── Beruflicher Werdegang ── -->
+        <div class="relative mb-16">
           <!-- Dot -->
-          <div class="absolute left-4 md:left-1/2 top-6 w-5 h-5 rounded-full bg-primary border-4 border-white dark:border-[#0a0a0a] transform md:-translate-x-2.5 shadow-lg z-10"></div>
-          <!-- Badge -->
-          <span class="absolute left-14 md:left-auto md:right-[calc(50%-5.5rem)] top-5 text-xs font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full">Aktuell</span>
-          <!-- Card -->
-          <div class="bg-white dark:bg-gray-800/70 p-7 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 w-full md:w-[calc(50%-3rem)]">
-            <div class="flex justify-between items-start flex-wrap gap-2 mb-4">
+          <div class="absolute -left-[1.85rem] top-1.5 w-4 h-4 rounded-full bg-primary border-4 border-white dark:border-[#0a0a0a] shadow-lg z-10"></div>
+          <h2 data-i18n="cv.professional" class="text-3xl font-bold mb-8 text-primary border-b border-primary/30 pb-3">Beruflicher Werdegang</h2>
+          <div class="bg-white dark:bg-gray-800/70 p-8 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
               <div>
-                <h3 data-i18n="cv.dps_title" class="text-xl font-bold">Werkstudent – Fullstack Softwareentwicklung</h3>
-                <p class="text-primary font-medium mt-1" data-i18n="cv.dps_company">DPS Engineering GmbH, Hamburg</p>
+                <h3 data-i18n="cv.dps_title" class="text-2xl font-bold mb-2">Werkstudent – Fullstack Softwareentwicklung</h3>
+                <p class="text-gray-600 dark:text-gray-400" data-i18n="cv.dps_company">DPS Engineering GmbH, Hamburg</p>
               </div>
-              <span class="text-sm text-gray-400 whitespace-nowrap">04/2021 – heute</span>
+              <div class="text-right text-gray-500 dark:text-gray-400 text-sm whitespace-nowrap">04/2021 – heute</div>
             </div>
-            <ul class="space-y-2 text-gray-600 dark:text-gray-300">
-              <li class="flex items-start gap-2"><span class="text-primary mt-1">▸</span><span data-i18n="cv.dps_task1">Automatisierte Frontend-Tests</span></li>
-              <li class="flex items-start gap-2"><span class="text-primary mt-1">▸</span><span data-i18n="cv.dps_task2">Entwicklung von Backend und Frontend</span></li>
-              <li class="flex items-start gap-2"><span class="text-primary mt-1">▸</span><span data-i18n="cv.dps_task3">Unterstützung bei Datenbankmigrationen</span></li>
-              <li class="flex items-start gap-2"><span class="text-primary mt-1">▸</span><span data-i18n="cv.dps_task4">Optimierung von Entwicklungs- und Testprozessen</span></li>
-              <li class="flex items-start gap-2"><span class="text-primary mt-1">▸</span><span data-i18n="cv.dps_task5">Einrichtung von Testsystemen</span></li>
+            <ul class="list-disc pl-5 mt-4 space-y-2 text-lg">
+              <li data-i18n="cv.dps_task1">Automatisierte Frontend-Tests</li>
+              <li data-i18n="cv.dps_task2">Entwicklung von Backend und Frontend</li>
+              <li data-i18n="cv.dps_task3">Unterstützung bei Datenbankmigrationen</li>
+              <li data-i18n="cv.dps_task4">Optimierung von Entwicklungs- und Testprozessen</li>
+              <li data-i18n="cv.dps_task5">Einrichtung von Testsystemen</li>
             </ul>
           </div>
         </div>
 
-        <!-- ── Station 2: HAW Hamburg ── -->
-        <div class="relative flex flex-col md:flex-row gap-6 md:gap-0 mb-14 pl-16 md:pl-[calc(50%+2rem)]">
-          <!-- Dot -->
-          <div class="absolute left-4 md:left-1/2 top-6 w-5 h-5 rounded-full bg-primary/70 border-4 border-white dark:border-[#0a0a0a] transform md:-translate-x-2.5 shadow-lg z-10"></div>
-          <!-- Card -->
-          <div class="bg-white dark:bg-gray-800/70 p-7 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 w-full md:w-[calc(50%-3rem)]">
-            <div class="flex justify-between items-start flex-wrap gap-2 mb-3">
-              <div>
-                <h3 data-i18n="cv.haw_title" class="text-xl font-bold">B.Sc. Angewandte Informatik</h3>
-                <p class="text-primary font-medium mt-1" data-i18n="cv.haw_location">HAW Hamburg</p>
-              </div>
-              <span class="text-sm text-gray-400 whitespace-nowrap" data-i18n="cv.haw_period">04/2021 – heute</span>
+        <!-- ── Studium ── -->
+        <div class="relative mb-16">
+          <div class="absolute -left-[1.85rem] top-1.5 w-4 h-4 rounded-full bg-primary border-4 border-white dark:border-[#0a0a0a] shadow-lg z-10"></div>
+          <h2 data-i18n="cv.education" class="text-3xl font-bold mb-8 text-primary border-b border-primary/30 pb-3">Studium</h2>
+          <div class="reveal-stagger space-y-8">
+            <div class="bg-white dark:bg-gray-800/70 p-8 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700">
+              <h3 data-i18n="cv.haw_title" class="text-2xl font-bold mb-2">B.Sc. Angewandte Informatik</h3>
+              <p class="text-gray-600 dark:text-gray-400 mb-2" data-i18n="cv.haw_location">HAW Hamburg</p>
+              <p class="text-gray-500 dark:text-gray-400" data-i18n="cv.haw_period">04/2021 – heute</p>
+              <p class="mt-4" data-i18n="cv.haw_thesis">Abschlussarbeit: Maschinelle Übersetzung für Low-Resource-Sprachen: Ein hybrider Ansatz zur Übersetzung für die Kobani-Variante des Kurmanji.</p>
             </div>
-            <p class="text-gray-600 dark:text-gray-300 text-sm" data-i18n="cv.haw_thesis">Abschlussarbeit: Maschinelle Übersetzung für Low-Resource-Sprachen: Ein hybrider Ansatz zur Übersetzung für die Kobani-Variante des Kurmanji.</p>
-          </div>
-        </div>
-
-        <!-- ── Station 3: Skills Preview ── -->
-        <div class="relative flex flex-col md:flex-row md:justify-end gap-6 md:gap-0 mb-6 md:pr-[calc(50%+2rem)] pl-16 md:pl-0">
-          <!-- Dot -->
-          <div class="absolute left-4 md:left-1/2 top-6 w-5 h-5 rounded-full bg-primary/50 border-4 border-white dark:border-[#0a0a0a] transform md:-translate-x-2.5 shadow z-10"></div>
-          <!-- Card -->
-          <div class="bg-white dark:bg-gray-800/70 p-7 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 w-full md:w-[calc(50%-3rem)]">
-            <h3 data-i18n="cv.skills" class="text-xl font-bold mb-4">Software-Kenntnisse</h3>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">React</span>
-              <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">TypeScript</span>
-              <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Spring Boot</span>
-              <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Python</span>
-              <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Docker</span>
-              <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-400 rounded-full text-sm">+ weitere im vollständigen CV</span>
+            <div class="bg-white dark:bg-gray-800/70 p-8 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700">
+              <h3 data-i18n="cv.aleppo_title" class="text-2xl font-bold mb-2">Maschinenbau</h3>
+              <p class="text-gray-600 dark:text-gray-400 mb-2" data-i18n="cv.aleppo_location">Universität Aleppo, Syrien</p>
+              <p class="text-gray-500 dark:text-gray-400" data-i18n="cv.aleppo_period">09/2010 – 08/2011</p>
             </div>
           </div>
         </div>
 
-        <!-- ── Fade-out: weitere Stationen angedeutet ── -->
-        <div class="relative pl-16 md:pl-[calc(50%+2rem)]">
-          <!-- Dot blurred -->
-          <div class="absolute left-4 md:left-1/2 top-4 w-5 h-5 rounded-full bg-gray-300 dark:bg-gray-600 border-4 border-white dark:border-[#0a0a0a] transform md:-translate-x-2.5 opacity-40 z-10"></div>
-          <div class="w-full md:w-[calc(50%-3rem)] h-20 bg-gradient-to-b from-white dark:from-gray-800/70 to-transparent rounded-2xl border border-gray-200/50 dark:border-gray-700/30 opacity-40 blur-[2px]"></div>
+        <!-- ── Software Kenntnisse ── -->
+        <div class="relative mb-6">
+          <div class="absolute -left-[1.85rem] top-1.5 w-4 h-4 rounded-full bg-primary border-4 border-white dark:border-[#0a0a0a] shadow-lg z-10"></div>
+          <h2 data-i18n="cv.skills" class="text-3xl font-bold mb-8 text-primary border-b border-primary/30 pb-3">Software-Kenntnisse</h2>
+          <div class="reveal-stagger grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white dark:bg-gray-800/70 p-6 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700">
+              <h3 data-i18n="cv.programming" class="text-xl font-bold mb-3">Programmiersprachen</h3>
+              <p>Java, Python, C, JavaScript</p>
+            </div>
+            <div class="bg-white dark:bg-gray-800/70 p-6 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700">
+              <h3 data-i18n="cv.frontend" class="text-xl font-bold mb-3">Frontend-Technologien</h3>
+              <p>HTML, CSS, Vue.js, React, TypeScript</p>
+            </div>
+            <div class="bg-white dark:bg-gray-800/70 p-6 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700">
+              <h3 data-i18n="cv.backend" class="text-xl font-bold mb-3">Backend-Technologien</h3>
+              <p>Spring Boot, Quarkus, Liquibase, Spring Batch</p>
+            </div>
+            <div class="bg-white dark:bg-gray-800/70 p-6 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700">
+              <h3 data-i18n="cv.databases" class="text-xl font-bold mb-3">Datenbanken</h3>
+              <p>PostgreSQL, MSSQL</p>
+            </div>
+            <div class="bg-white dark:bg-gray-800/70 p-6 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700">
+              <h3 data-i18n="cv.tools" class="text-xl font-bold mb-3">Tools</h3>
+              <p>Selenium, JMeter, Glowroot, Keycloak, Jenkins, Docker/Podman, OpenTelemetry, Postman</p>
+            </div>
+            <div class="bg-white dark:bg-gray-800/70 p-6 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700">
+              <h3 data-i18n="cv.formats" class="text-xl font-bold mb-3">Datenformate</h3>
+              <p>XML, YAML, XSD, JSON</p>
+            </div>
+          </div>
         </div>
 
-      </div><!-- end timeline -->
+        <!-- ── Fade-out Dot ── -->
+        <div class="absolute -left-[1.85rem] bottom-0 w-4 h-4 rounded-full bg-gray-300 dark:bg-gray-600 border-4 border-white dark:border-[#0a0a0a] opacity-40 z-10"></div>
 
-      <!-- ── Fade-Overlay + CTA ── -->
-      <div class="relative -mt-32 pt-32 pb-4 bg-gradient-to-t from-gray-50 dark:from-[#0a0a0a] via-gray-50/95 dark:via-[#0a0a0a]/95 to-transparent text-center">
-        <p class="text-gray-500 dark:text-gray-400 mb-2 text-sm tracking-wide uppercase font-medium">Weitere Stationen, Sprachkenntnisse &amp; mehr</p>
-        <h2 class="text-2xl font-bold mb-6">Vollständigen CV anfordern</h2>
+      </div><!-- end timeline wrapper -->
+
+      <!-- ── CTA: Vollständigen CV anfordern ── -->
+      <div class="mt-16 text-center bg-white dark:bg-gray-800/70 rounded-2xl border border-primary/30 shadow-xl p-10">
+        <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 mb-5">
+          <svg class="w-7 h-7 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+          </svg>
+        </div>
+        <h2 class="text-2xl font-bold mb-3">Vollständigen CV anfordern</h2>
+        <p class="text-gray-500 dark:text-gray-400 mb-8 max-w-md mx-auto">Der vollständige Lebenslauf enthält weitere Details zu Erfahrungen, Sprachkenntnissen und mehr. Einfach anfragen – ich antworte in der Regel innerhalb von 24 Stunden.</p>
         <a href="kontakt.html"
-           class="inline-flex items-center gap-3 bg-primary text-white px-10 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-primary/40 hover:scale-105 transition-all duration-200">
+           class="inline-flex items-center gap-3 bg-primary text-white px-10 py-4 rounded-full font-semibold text-lg shadow-lg hover:scale-105 hover:shadow-primary/30 transition-all duration-200">
           <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
           </svg>
-          Vollständigen CV anfragen
+          Jetzt anfragen
         </a>
-        <p class="text-gray-400 text-sm mt-4">Ich antworte in der Regel innerhalb von 24 Stunden.</p>
       </div>
 
     </div>
