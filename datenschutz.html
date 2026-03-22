@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="de" class="scroll-smooth">
 <head>
+  <script>
+    // Redirect github.io to custom domain (canonical enforcement)
+    if (window.location.hostname === 'ramanahad.github.io' || window.location.hostname.endsWith('.github.io')) {
+      window.location.replace('https://raman-ahmad.de' + window.location.pathname + window.location.search + window.location.hash);
+    }
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Raman Ahmad | Datenschutzerklärung</title>
@@ -51,7 +57,7 @@
           <p>Raman Ahmad<br>
           Eißendorferstr. 128<br>
           21073 Hamburg, Deutschland<br>
-          E-Mail: <a href="mailto:raman.ahmad2022@gmail.com" class="text-primary hover:underline">kontakt@raman-ahmad.de</a></p>
+          E-Mail: <a href="/cdn-cgi/l/email-protection#b0c2d1ddd1de9ed1d8ddd1d482808282f0d7ddd1d9dc9ed3dfdd" class="text-primary hover:underline"><span class="__cf_email__" data-cfemail="8be0e4e5ffeae0ffcbf9eae6eae5a6eae3e6eaefa5efee">[email&#160;protected]</span></a></p>
         </section>
 
         <section>
@@ -76,7 +82,7 @@
 
         <section>
           <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">6. Ihre Rechte</h2>
-          <p>Sie haben gemäß DSGVO das Recht auf Auskunft (Art. 15), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21). Zur Geltendmachung Ihrer Rechte wenden Sie sich an: <a href="mailto:kontakt@raman-ahmad.de" class="text-primary hover:underline">kontakt@raman-ahmad.de</a>. Sie haben zudem das Recht, sich bei der zuständigen Datenschutzaufsichtsbehörde zu beschweren.</p>
+          <p>Sie haben gemäß DSGVO das Recht auf Auskunft (Art. 15), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21). Zur Geltendmachung Ihrer Rechte wenden Sie sich an: <a href="/cdn-cgi/l/email-protection#412a2e2f35202a350133202c202f6c20292c20256f2524" class="text-primary hover:underline"><span class="__cf_email__" data-cfemail="95fefafbe1f4fee1d5e7f4f8f4fbb8f4fdf8f4f1bbf1f0">[email&#160;protected]</span></a>. Sie haben zudem das Recht, sich bei der zuständigen Datenschutzaufsichtsbehörde zu beschweren.</p>
         </section>
 
         <section>
@@ -101,13 +107,8 @@
     </div>
   </footer>
 
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     const toggle = document.getElementById('theme-toggle');
     const sun = document.getElementById('sun');
     const moon = document.getElementById('moon');
-    function syncIcons() { const dark = document.documentElement.classList.contains('dark'); sun.classList.toggle('hidden', !dark); moon.classList.toggle('hidden', dark); }
-    syncIcons();
-    toggle.addEventListener('click', function () { document.documentElement.classList.toggle('dark'); localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light'); syncIcons(); });
-  </script>
-</body>
-</html>
+    function syncIcons() { const dark = documen

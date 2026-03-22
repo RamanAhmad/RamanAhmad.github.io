@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="de" class="scroll-smooth">
 <head>
+  <script>
+    // Redirect github.io to custom domain (canonical enforcement)
+    if (window.location.hostname === 'ramanahad.github.io' || window.location.hostname.endsWith('.github.io')) {
+      window.location.replace('https://raman-ahmad.de' + window.location.pathname + window.location.search + window.location.hash);
+    }
+  </script>
   <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Raman Ahmad | Lebenslauf – Fullstack Developer & NLP-Forscher</title>

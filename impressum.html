@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="de" class="scroll-smooth">
 <head>
+  <script>
+    // Redirect github.io to custom domain (canonical enforcement)
+    if (window.location.hostname === 'ramanahad.github.io' || window.location.hostname.endsWith('.github.io')) {
+      window.location.replace('https://raman-ahmad.de' + window.location.pathname + window.location.search + window.location.hash);
+    }
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Raman Ahmad | Impressum</title>
@@ -56,7 +62,7 @@
 
         <section>
           <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Kontakt</h2>
-          <p>E-Mail: <a href="mailto:raman.ahmad2022@gmail.com" class="text-primary hover:underline">kontakt@raman-ahmad.de</a></p>
+          <p>E-Mail: <a href="/cdn-cgi/l/email-protection#3143505c505f1f50595c50550301030371565c50585d1f525e5c" class="text-primary hover:underline"><span class="__cf_email__" data-cfemail="385357564c59534c784a5955595615595055595c165c5d">[email&#160;protected]</span></a></p>
         </section>
 
         <section>
@@ -96,13 +102,9 @@
     </div>
   </footer>
 
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     const toggle = document.getElementById('theme-toggle');
     const sun = document.getElementById('sun');
     const moon = document.getElementById('moon');
     function syncIcons() { const dark = document.documentElement.classList.contains('dark'); sun.classList.toggle('hidden', !dark); moon.classList.toggle('hidden', dark); }
-    syncIcons();
-    toggle.addEventListener('click', function () { document.documentElement.classList.toggle('dark'); localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light'); syncIcons(); });
-  </script>
-</body>
-</html>
+    syncIcons()
