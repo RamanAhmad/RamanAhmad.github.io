@@ -24,7 +24,7 @@
   // ─── SPRACHE ──────────────────────────────────────────────────────────────
   function applyTranslations(lang) {
     document.documentElement.lang = lang;
-    document.documentElement.dir  = (lang === 'ckb') ? 'rtl' : 'ltr';
+    document.documentElement.dir  = (lang === 'ckb' || lang === 'ar') ? 'rtl' : 'ltr';
     if (typeof translations === 'undefined') return;
     document.querySelectorAll('[data-i18n]').forEach(function (el) {
       var key = el.getAttribute('data-i18n');
