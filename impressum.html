@@ -2,7 +2,6 @@
 <html lang="de" class="scroll-smooth">
 <head>
   <script>
-    // Redirect github.io to custom domain (canonical enforcement)
     if (window.location.hostname === 'ramanahad.github.io' || window.location.hostname.endsWith('.github.io')) {
       window.location.replace('https://raman-ahmad.de' + window.location.pathname + window.location.search + window.location.hash);
     }
@@ -10,43 +9,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Raman Ahmad | Impressum</title>
-  <meta name="description" content="Impressum der persönlichen Website von Raman Ahmad – Fullstack Developer & NLP-Forscher.">
-  <meta name="robots" content="noindex, follow">
+  <meta name="description" content="Impressum der Website raman-ahmad.de gemäß § 5 TMG.">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://raman-ahmad.de/impressum.html">
+  <meta property="og:title" content="Impressum">
+  <meta property="og:description" content="Impressum gemäß § 5 TMG.">
+  <meta property="og:image" content="https://raman-ahmad.de/assets/profile.jpg">
+  <meta property="og:url" content="https://raman-ahmad.de/impressum.html">
+  <meta property="og:type" content="website">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Raman Ahmad","jobTitle":"Fullstack Developer & NLP-Forscher","url":"https://raman-ahmad.de","image":"https://raman-ahmad.de/assets/profile.jpg","sameAs":["https://github.com/RamanAhmad","https://www.linkedin.com/in/raman-ahmad-5243ab30b/","https://orcid.org/0009-0001-8012-3945"]}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: '#2563eb' } } } }</script>
-  <style>body { font-family: 'Inter', system-ui, sans-serif; }</style>
+  <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#2563eb'}}}}</script>
+  <style>body{font-family:'Inter',system-ui,sans-serif}</style>
   <script>
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark');
-    } else { document.documentElement.classList.remove('dark'); }
+    if(localStorage.theme==='dark'||(!('theme' in localStorage)&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark')}else{document.documentElement.classList.remove('dark')}
   </script>
 </head>
 <body class="bg-gray-50 dark:bg-[#0a0a0a] text-gray-900 dark:text-gray-100 min-h-screen flex flex-col">
 
-  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-gray-950/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <a href="index.html" class="text-3xl font-bold text-primary">RA</a>
-        <div class="hidden md:flex space-x-8 font-medium">
-          <a href="index.html" class="hover:text-primary">Startseite</a>
-          <a href="ueber-mich.html" class="hover:text-primary">Über mich</a>
-          <a href="forschung.html" class="hover:text-primary">Forschung</a>
-          <a href="publikationen.html" class="hover:text-primary">Publikationen</a>
-          <a href="projekte.html" class="hover:text-primary">Projekte</a>
-          <a href="interviews.html" class="hover:text-primary">Interviews</a>
-          <a href="cv.html" class="hover:text-primary">CV</a>
-          <a href="kontakt.html" class="hover:text-primary">Kontakt</a>
-        </div>
-        <button id="theme-toggle" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700">
-          <svg id="sun" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-          <svg id="moon" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
-        </button>
-      </div>
-    </div>
-  </nav>
-
-  <main class="flex-1 pt-24 pb-16">
+<main class="flex-1 pt-24 pb-16">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       <h1 class="text-4xl font-bold mb-2">Impressum</h1>
       <p class="text-gray-500 dark:text-gray-400 mb-10">Angaben gemäß § 5 TMG</p>
@@ -89,22 +73,7 @@
     </div>
   </main>
 
-  <footer class="bg-gray-950 text-gray-400 py-12">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="border-t border-gray-800 pt-6 text-center text-sm">
-        <p>© 2026 Raman Ahmad – Alle Rechte vorbehalten.</p>
-        <div class="mt-2 flex justify-center gap-4 text-gray-500">
-          <a href="impressum.html" class="hover:text-primary transition">Impressum</a>
-          <span>·</span>
-          <a href="datenschutz.html" class="hover:text-primary transition">Datenschutz</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-    const toggle = document.getElementById('theme-toggle');
-    const sun = document.getElementById('sun');
-    const moon = document.getElementById('moon');
-    function syncIcons() { const dark = document.documentElement.classList.contains('dark'); sun.classList.toggle('hidden', !dark); moon.classList.toggle('hidden', dark); }
-    syncIcons()
+  <script src="js/components.js"></script>
+  <script src="js/i18n.js"></script>
+</body>
+</html>

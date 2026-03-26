@@ -2,368 +2,181 @@
 <html lang="de" class="scroll-smooth">
 <head>
   <script>
-    // Redirect github.io to custom domain (canonical enforcement)
     if (window.location.hostname === 'ramanahad.github.io' || window.location.hostname.endsWith('.github.io')) {
       window.location.replace('https://raman-ahmad.de' + window.location.pathname + window.location.search + window.location.hash);
     }
   </script>
   <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Raman Ahmad | Projekte – Fullstack Development & NLP</title>
-  <meta name="description" content="Projekte von Raman Ahmad: Fullstack-Webapplikationen mit React und Spring Boot sowie NLP-Tools für kurdische Sprachen.">
+  <meta name="description" content="Projekte von Raman Ahmad: Fullstack-Webapplikationen und NLP-Tools für kurdische Sprachen.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://raman-ahmad.de/projekte.html">
-  <meta property="og:title" content="Raman Ahmad | Projekte – Fullstack Development & NLP">
-  <meta property="og:description" content="Projekte von Raman Ahmad: Fullstack-Webapplikationen mit React und Spring Boot sowie NLP-Tools für kurdische Sprachen.">
+  <meta property="og:title" content="Raman Ahmad | Projekte">
+  <meta property="og:description" content="Fullstack-Webapplikationen und NLP-Tools für kurdische Sprachen.">
   <meta property="og:image" content="https://raman-ahmad.de/assets/profile.jpg">
   <meta property="og:url" content="https://raman-ahmad.de/projekte.html">
   <meta property="og:type" content="website">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Raman Ahmad",
-    "jobTitle": "Fullstack Developer & NLP-Forscher",
-    "url": "https://raman-ahmad.de",
-    "image": "https://raman-ahmad.de/assets/profile.jpg",
-    "sameAs": [
-      "https://github.com/RamanAhmad",
-      "https://www.linkedin.com/in/raman-ahmad-5243ab30b/",
-      "https://orcid.org/0009-0001-8012-3945"
-    ]
-  }
-  </script>
-
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Raman Ahmad","jobTitle":"Fullstack Developer & NLP-Forscher","url":"https://raman-ahmad.de","image":"https://raman-ahmad.de/assets/profile.jpg","sameAs":["https://github.com/RamanAhmad","https://www.linkedin.com/in/raman-ahmad-5243ab30b/","https://orcid.org/0009-0001-8012-3945"]}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#2563eb'}}}}</script>
+  <style>body{font-family:'Inter',system-ui,sans-serif}</style>
   <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: { extend: { colors: { primary: '#2563eb' } } }
-    }
-  </script>
-
-  <style type="text/css">@font-face {font-family:Inter;font-style:normal;font-weight:300;src:url(/cf-fonts/v/inter/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:300;src:url(/cf-fonts/v/inter/5.0.16/greek-ext/wght/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:300;src:url(/cf-fonts/v/inter/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:300;src:url(/cf-fonts/v/inter/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:300;src:url(/cf-fonts/v/inter/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:300;src:url(/cf-fonts/v/inter/5.0.16/greek/wght/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:300;src:url(/cf-fonts/v/inter/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:400;src:url(/cf-fonts/v/inter/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:400;src:url(/cf-fonts/v/inter/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:400;src:url(/cf-fonts/v/inter/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:400;src:url(/cf-fonts/v/inter/5.0.16/greek/wght/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:400;src:url(/cf-fonts/v/inter/5.0.16/greek-ext/wght/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:400;src:url(/cf-fonts/v/inter/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:400;src:url(/cf-fonts/v/inter/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:500;src:url(/cf-fonts/v/inter/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:500;src:url(/cf-fonts/v/inter/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:500;src:url(/cf-fonts/v/inter/5.0.16/greek-ext/wght/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:500;src:url(/cf-fonts/v/inter/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:500;src:url(/cf-fonts/v/inter/5.0.16/greek/wght/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:500;src:url(/cf-fonts/v/inter/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:500;src:url(/cf-fonts/v/inter/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:600;src:url(/cf-fonts/v/inter/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:600;src:url(/cf-fonts/v/inter/5.0.16/greek-ext/wght/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:600;src:url(/cf-fonts/v/inter/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:600;src:url(/cf-fonts/v/inter/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:600;src:url(/cf-fonts/v/inter/5.0.16/greek/wght/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:600;src:url(/cf-fonts/v/inter/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:600;src:url(/cf-fonts/v/inter/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:700;src:url(/cf-fonts/v/inter/5.0.16/cyrillic-ext/wght/normal.woff2);unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:700;src:url(/cf-fonts/v/inter/5.0.16/cyrillic/wght/normal.woff2);unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:700;src:url(/cf-fonts/v/inter/5.0.16/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:700;src:url(/cf-fonts/v/inter/5.0.16/greek/wght/normal.woff2);unicode-range:U+0370-03FF;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:700;src:url(/cf-fonts/v/inter/5.0.16/latin-ext/wght/normal.woff2);unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:700;src:url(/cf-fonts/v/inter/5.0.16/greek-ext/wght/normal.woff2);unicode-range:U+1F00-1FFF;font-display:swap;}@font-face {font-family:Inter;font-style:normal;font-weight:700;src:url(/cf-fonts/v/inter/5.0.16/vietnamese/wght/normal.woff2);unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;font-display:swap;}</style>
-  <style>body { font-family: 'Inter', system-ui, sans-serif; }</style>
-
-  <script>
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
+    if(localStorage.theme==='dark'||(!('theme' in localStorage)&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark')}else{document.documentElement.classList.remove('dark')}
   </script>
 </head>
-
 <body class="bg-gray-50 dark:bg-[#0a0a0a] text-gray-900 dark:text-gray-100 min-h-screen flex flex-col">
 
-    <!-- ══════════════ NAVIGATION ══════════════ -->
-  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-gray-950/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+<style>body{font-family:'Inter',system-ui,sans-serif}
+    .filter-btn{padding:.4rem 1rem;border-radius:9999px;font-size:.875rem;font-weight:500;border:2px solid transparent;cursor:pointer;transition:all .2s;background:#f3f4f6;color:#374151}
+    .dark .filter-btn{background:#1f2937;color:#d1d5db}
+    .filter-btn:hover,.filter-btn.active{background:#2563eb;color:#fff;border-color:#2563eb}
+    .project-card{transition:opacity .3s,transform .3s}
+    .project-card.hidden-card{display:none}
+    .cat-count{display:inline-block;margin-left:.3rem;background:rgba(255,255,255,.25);border-radius:9999px;padding:0 .45rem;font-size:.75rem;line-height:1.5rem}
+    .filter-btn:not(.active) .cat-count{background:#e5e7eb;color:#6b7280}
+    .dark .filter-btn:not(.active) .cat-count{background:#374151;color:#9ca3af}</style>
+
+<main class="flex-grow pt-24 pb-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
 
-        <!-- Logo -->
-        <div class="text-3xl font-bold text-primary">RA</div>
-
-        <!-- Desktop Nav -->
-        <div class="hidden md:flex space-x-8 font-medium">
-          <a href="index.html"         data-i18n="nav.home"         class="hover:text-primary">Startseite</a>
-          <a href="ueber-mich.html"    data-i18n="nav.about"        class="hover:text-primary">Über mich</a>
-          <a href="forschung.html"     data-i18n="nav.research"     class="hover:text-primary">Forschung</a>
-          <a href="publikationen.html" data-i18n="nav.publications" class="hover:text-primary">Publikationen</a>
-          <a href="projekte.html"      data-i18n="nav.projects"     class="hover:text-primary">Projekte</a>
-          <a href="interviews.html"    data-i18n="nav.interviews"   class="hover:text-primary">Interviews</a>
-          <a href="cv.html"            data-i18n="nav.cv"           class="hover:text-primary">CV</a>
-          <a href="kontakt.html"       data-i18n="nav.contact"      class="hover:text-primary">Kontakt</a>
-        </div>
-
-        <!-- Right controls -->
-        <div class="flex items-center gap-2">
-          <select id="language-select" class="px-3 py-1.5 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-md text-sm">
-            <option value="de">Deutsch</option>
-            <option value="en">English</option>
-            <option value="ku">Kurmanjî</option>
-            <option value="ckb">سۆرانی</option>
-            <option value="ar">العربية</option>
-          </select>
-          <button id="theme-toggle" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700">
-            <svg id="sun" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
-            </svg>
-            <svg id="moon" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
-            </svg>
-          </button>
-          <!-- Hamburger (mobile only) -->
-          <button id="menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700" aria-label="Menü öffnen">
-            <svg id="hamburger-icon" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-            </svg>
-            <svg id="close-icon" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-            </svg>
-          </button>
-        </div>
+      <div class="text-center mb-10">
+        <h1 data-i18n="projects.title" class="text-5xl md:text-6xl font-bold mb-4">Aktuelle &amp; abgeschlossene Projekte</h1>
+        <p data-i18n="projects.subtitle" class="text-xl text-gray-600 dark:text-gray-400">Überblick über meine Entwicklungs- und Forschungsprojekte.</p>
       </div>
-    </div>
-  </nav>
 
-  <!-- ══════════════ MOBILE SIDEBAR ══════════════ -->
-  <!-- Backdrop -->
-  <div id="sidebar-backdrop" class="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm hidden md:hidden" aria-hidden="true"></div>
+      <div class="flex flex-wrap justify-center gap-3 mb-12" id="filter-bar">
+        <button class="filter-btn active" data-filter="all">Alle <span class="cat-count" id="count-all">8</span></button>
+        <button class="filter-btn" data-filter="nlp">🔬 NLP &amp; Forschung <span class="cat-count" id="count-nlp"></span></button>
+        <button class="filter-btn" data-filter="fullstack">⚙️ Fullstack <span class="cat-count" id="count-fullstack"></span></button>
+        <button class="filter-btn" data-filter="tools">🛠 Tools &amp; Extensions <span class="cat-count" id="count-tools"></span></button>
+        <button class="filter-btn" data-filter="hackathon">💡 Hackathons &amp; Events <span class="cat-count" id="count-hackathon"></span></button>
+        <button class="filter-btn" data-filter="uni">🎓 Uni-Projekte <span class="cat-count" id="count-uni"></span></button>
+      </div>
 
-  <!-- Sidebar panel -->
-  <aside id="mobile-sidebar"
-    class="fixed top-0 left-0 z-50 h-full w-72 bg-white dark:bg-gray-900 shadow-2xl transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden flex flex-col">
+      <div class="reveal-stagger grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
 
-    <!-- Sidebar header -->
-    <div class="flex items-center justify-between px-6 py-5 border-b border-gray-200 dark:border-gray-700">
-      <span class="text-2xl font-bold text-primary">RA</span>
-      <button id="sidebar-close" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800" aria-label="Menü schließen">
-        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-        </svg>
-      </button>
-    </div>
-
-    <!-- Nav links -->
-    <nav class="flex-1 overflow-y-auto px-4 py-6 space-y-1">
-      <a href="index.html"         data-i18n="nav.home"         class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-xl font-medium hover:bg-primary/10 hover:text-primary transition">
-        <svg class="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
-        Startseite
-      </a>
-      <a href="ueber-mich.html"    data-i18n="nav.about"        class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-xl font-medium hover:bg-primary/10 hover:text-primary transition">
-        <svg class="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
-        Über mich
-      </a>
-      <a href="forschung.html"     data-i18n="nav.research"     class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-xl font-medium hover:bg-primary/10 hover:text-primary transition">
-        <svg class="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m1.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
-        Forschung
-      </a>
-      <a href="publikationen.html" data-i18n="nav.publications" class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-xl font-medium hover:bg-primary/10 hover:text-primary transition">
-        <svg class="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
-        Publikationen
-      </a>
-      <a href="projekte.html"      data-i18n="nav.projects"     class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-xl font-medium hover:bg-primary/10 hover:text-primary transition">
-        <svg class="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
-        Projekte
-      </a>
-      <a href="interviews.html"    data-i18n="nav.interviews"   class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-xl font-medium hover:bg-primary/10 hover:text-primary transition">
-        <svg class="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/></svg>
-        Interviews
-      </a>
-      <a href="cv.html"            data-i18n="nav.cv"           class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-xl font-medium hover:bg-primary/10 hover:text-primary transition">
-        <svg class="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-        CV
-      </a>
-      <a href="kontakt.html"       data-i18n="nav.contact"      class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-xl font-medium hover:bg-primary/10 hover:text-primary transition">
-        <svg class="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-        Kontakt
-      </a>
-    </nav>
-
-    <!-- Sidebar footer -->
-    <div class="px-6 py-4 border-t border-gray-200 dark:border-gray-700 text-xs text-gray-400 text-center">
-      © 2026 Raman Ahmad
-    </div>
-  </aside>
-
-  <!-- Sidebar JS -->
-  <script>
-  (function() {
-    var toggle   = document.getElementById('menu-toggle');
-    var sidebar  = document.getElementById('mobile-sidebar');
-    var backdrop = document.getElementById('sidebar-backdrop');
-    var closeBtn = document.getElementById('sidebar-close');
-    var hamIcon  = document.getElementById('hamburger-icon');
-    var closeIco = document.getElementById('close-icon');
-
-    function openSidebar() {
-      sidebar.classList.remove('-translate-x-full');
-      backdrop.classList.remove('hidden');
-      hamIcon.classList.add('hidden');
-      closeIco.classList.remove('hidden');
-      document.body.style.overflow = 'hidden';
-    }
-    function closeSidebar() {
-      sidebar.classList.add('-translate-x-full');
-      backdrop.classList.add('hidden');
-      hamIcon.classList.remove('hidden');
-      closeIco.classList.add('hidden');
-      document.body.style.overflow = '';
-    }
-
-    if (toggle)   toggle.addEventListener('click', openSidebar);
-    if (closeBtn) closeBtn.addEventListener('click', closeSidebar);
-    if (backdrop) backdrop.addEventListener('click', closeSidebar);
-
-    // Close on nav link click
-    document.querySelectorAll('.mobile-nav-link').forEach(function(link) {
-      link.addEventListener('click', closeSidebar);
-    });
-  })();
-  </script>
-
-  <main class="flex-grow pt-6 pb-16">
-  <!-- ══ PAGE HERO ══ -->
-  <div class="pt-6 pb-10 text-center bg-gradient-to-b from-gray-100 dark:from-gray-900/60 to-transparent">
-  </div>
-
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 data-i18n="projects.title" class="text-5xl md:text-6xl font-bold text-center mb-8">Aktuelle &amp; abgeschlossene Projekte</h1>
-      <p data-i18n="projects.subtitle" class="text-center text-xl text-gray-600 dark:text-gray-400 mb-16">Überblick über meine Entwicklungs- und Forschungsprojekte.</p>
-
-      <div class="reveal-stagger grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-        <div class="bg-white dark:bg-gray-800/70 p-8 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 flex flex-col">
-          <div class="flex justify-between items-start mb-4">
-            <h3 data-i18n="projects.thesis_title" class="text-2xl font-bold text-primary">Bachelor-Thesis: Maschinelle Übersetzung</h3>
-            <span class="inline-block px-4 py-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm font-medium" data-i18n="projects.completed">Abgeschlossen</span>
+        <div class="project-card bg-white dark:bg-gray-800/70 p-8 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 flex flex-col" data-categories="nlp">
+          <div class="flex justify-between items-start mb-4 gap-2">
+            <h3 data-i18n="projects.thesis_title" class="text-xl font-bold text-primary">Bachelor-Thesis: Maschinelle Übersetzung</h3>
+            <span class="shrink-0 px-3 py-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-xs font-medium" data-i18n="projects.completed">Abgeschlossen</span>
           </div>
-          <p class="text-gray-600 dark:text-gray-400 mb-4" data-i18n="projects.thesis_period">
-            <a href="https://www.haw-hamburg.de/" target="_blank" rel="noopener" class="hover:text-primary transition">HAW Hamburg</a> • 2021 – 2026
-          </p>
-          <p class="mb-4" data-i18n="projects.thesis_desc">Hybrider Ansatz zur maschinellen Übersetzung für die Kobani-Variante des Kurmanji (Low-Resource NLP). Abschluss mit Fine-Tuning des NLLB-200-Modells – zwei öffentlich verfügbare Modelle auf HuggingFace.</p>
+          <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm"><a href="https://www.haw-hamburg.de/" target="_blank" rel="noopener" class="hover:text-primary">HAW Hamburg</a> • 2021 – 2026</p>
+          <p class="mb-4 text-sm" data-i18n="projects.thesis_desc">Hybrider Ansatz zur maschinellen Übersetzung für die Kobani-Variante des Kurmanji (Low-Resource NLP). Fine-Tuning des NLLB-200-Modells – zwei öffentliche HuggingFace-Modelle.</p>
           <div class="mt-auto">
-            <p class="font-medium mb-2" data-i18n="projects.achievements">Erfolge:</p>
-            <ul class="list-disc pl-5 text-sm space-y-1 text-gray-700 dark:text-gray-300">
+            <ul class="list-disc pl-5 text-sm space-y-1 text-gray-700 dark:text-gray-300 mb-4">
               <li data-i18n="projects.thesis_ach1">Korpus-Aufbau für Kobani-Kurmanji</li>
               <li data-i18n="projects.thesis_ach2">Fine-Tuning NLLB-200 (kob_Latn ↔ eng)</li>
               <li data-i18n="projects.thesis_ach3">2 veröffentlichte HuggingFace-Modelle</li>
             </ul>
-            <div class="flex flex-wrap gap-3 mt-4">
-              <a href="https://RamanAhmad.github.io/assets/Thesis_HAW_Raman_Ahmad_Final.pdf" target="_blank" rel="noopener"
-                 class="inline-flex items-center gap-1 text-sm text-primary hover:underline">
-                📄 Thesis (PDF)
-              </a>
-              <a href="https://huggingface.co/RamanAhmad/nllb-distilled-600m-kob_Latn-to-eng" target="_blank" rel="noopener"
-                 class="inline-flex items-center gap-1 text-sm text-primary hover:underline">
-                🤗 kob→eng
-              </a>
-              <a href="https://huggingface.co/RamanAhmad/nllb-distilled-600m-eng-to-kob_Latn" target="_blank" rel="noopener"
-                 class="inline-flex items-center gap-1 text-sm text-primary hover:underline">
-                🤗 eng→kob
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- ── KurdaBoard – Offline Kanban Workspace ── -->
-        <div class="bg-white dark:bg-gray-800/70 p-8 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 flex flex-col">
-          <div class="flex justify-between items-start mb-4">
-            <h3 data-i18n="projects.kurdaboard_title" class="text-2xl font-bold text-primary">KurdaBoard – Offline-Kanban-Workspace</h3>
-            <span class="inline-block px-4 py-1 bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 rounded-full text-sm font-medium" data-i18n="projects.ongoing">Laufend</span>
-          </div>
-          <p class="text-gray-600 dark:text-gray-400 mb-4" data-i18n="projects.kurdaboard_period">Persönliches Projekt • 2025</p>
-          <p class="mb-4" data-i18n="projects.kurdaboard_desc">Offline-first Kanban- und Projekt-Workspace. Zwei Dateien, null Abhängigkeiten, kein Build-Schritt. Vanilla JavaScript, IndexedDB und CSS Custom Properties – läuft vollständig im Browser.</p>
-          <div class="mt-auto">
-            <p class="font-medium mb-2" data-i18n="projects.achievements">Highlights:</p>
-            <ul class="list-disc pl-5 text-sm space-y-1 text-gray-700 dark:text-gray-300">
-              <li data-i18n="projects.kurdaboard_ach1">Drag & Drop Kanban-Boards (To Do / In Progress / Done)</li>
-              <li data-i18n="projects.kurdaboard_ach2">PWA – installierbar, 100 % offline, Daten bleiben lokal</li>
-              <li data-i18n="projects.kurdaboard_ach3">JSON-Backup, Tastaturnavigation & ARIA Accessibility</li>
-            </ul>
-            <div class="flex flex-wrap gap-2 mt-4 mb-4">
-              <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">Vanilla JS</span>
-              <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">IndexedDB</span>
-              <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">PWA</span>
-              <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">CSS</span>
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-xs">NLP</span>
+              <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-xs">HuggingFace</span>
+              <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-xs">Python</span>
             </div>
             <div class="flex flex-wrap gap-3">
-              <a href="https://raman-ahmad.de/kurdaboard/" target="_blank" rel="noopener"
-                 class="inline-flex items-center gap-2 text-sm text-primary hover:underline font-medium">
-                🔗 Live Demo
-              </a>
-              <a href="https://github.com/RamanAhmad/kurdaboard" target="_blank" rel="noopener"
-                 class="inline-flex items-center gap-2 text-sm text-primary hover:underline font-medium">
-                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.73.08-.73 1.21.08 1.85 1.24 1.85 1.24 1.08 1.85 2.83 1.32 3.52 1.01.11-.78.42-1.32.76-1.62-2.67-.3-5.48-1.34-5.48-5.96 0-1.32.47-2.4 1.24-3.24-.12-.3-.54-1.53.12-3.19 0 0 1.01-.32 3.31 1.23.96-.27 1.98-.4 3-.41 1.02.01 2.04.14 3 .41 2.3-1.55 3.31-1.23 3.31-1.23.66 1.66.24 2.89.12 3.19.77.84 1.24 1.92 1.24 3.24 0 4.63-2.81 5.65-5.49 5.95.43.37.82 1.1.82 2.22v3.29c0 .32.22.69.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
-                GitHub
-              </a>
+              <a href="https://RamanAhmad.github.io/assets/Thesis_HAW_Raman_Ahmad_Final.pdf" target="_blank" rel="noopener" class="text-sm text-primary hover:underline">📄 Thesis (PDF)</a>
+              <a href="https://huggingface.co/RamanAhmad/nllb-distilled-600m-kob_Latn-to-eng" target="_blank" rel="noopener" class="text-sm text-primary hover:underline">🤗 kob→eng</a>
+              <a href="https://huggingface.co/RamanAhmad/nllb-distilled-600m-eng-to-kob_Latn" target="_blank" rel="noopener" class="text-sm text-primary hover:underline">🤗 eng→kob</a>
             </div>
           </div>
         </div>
 
-        <div class="bg-white dark:bg-gray-800/70 p-8 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 flex flex-col">
-          <div class="flex justify-between items-start mb-4">
-            <h3 data-i18n="projects.ickl_title" class="text-2xl font-bold text-primary">ICKL-6 &amp; ICKL-7 – Kurdische Dialektologie</h3>
-            <span class="inline-block px-4 py-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm font-medium" data-i18n="projects.completed">Abgeschlossen</span>
+        <div class="project-card bg-white dark:bg-gray-800/70 p-8 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 flex flex-col" data-categories="nlp">
+          <div class="flex justify-between items-start mb-4 gap-2">
+            <h3 data-i18n="projects.ickl_title" class="text-xl font-bold text-primary">ICKL-6 &amp; ICKL-7 – Kurdische Dialektologie</h3>
+            <span class="shrink-0 px-3 py-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-xs font-medium" data-i18n="projects.completed">Abgeschlossen</span>
           </div>
-          <p class="text-gray-600 dark:text-gray-400 mb-4" data-i18n="projects.ickl_period">
-            <a href="https://ickl-conference.org/" target="_blank" rel="noopener" class="hover:text-primary transition">ICKL-Konferenz</a> • 2023 &amp; Aug. 2025
-          </p>          <p class="mb-4" data-i18n="projects.ickl_desc">Forschungsbeiträge zur kurdischen Dialektologie auf zwei internationalen Konferenzen – zwei Poster bei ICKL-6 (2023) und eine Präsentation bei ICKL-7 (2025).</p>
+          <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm"><a href="https://ickl-conference.org/" target="_blank" rel="noopener" class="hover:text-primary">ICKL-Konferenz</a> • 2023 &amp; Aug. 2025</p>
+          <p class="mb-4 text-sm" data-i18n="projects.ickl_desc">Forschungsbeiträge zur kurdischen Dialektologie – zwei Poster bei ICKL-6 (2023) und eine Präsentation bei ICKL-7 (2025).</p>
           <div class="mt-auto">
-            <p class="font-medium mb-2" data-i18n="projects.achievements">Beiträge:</p>
-            <ul class="list-disc pl-5 text-sm space-y-1 text-gray-700 dark:text-gray-300">
+            <ul class="list-disc pl-5 text-sm space-y-1 text-gray-700 dark:text-gray-300 mb-4">
               <li data-i18n="projects.ickl_ach1">ICKL-6 Poster: Analysis of Phonology and Morphology in the Kobani Dialect</li>
               <li data-i18n="projects.ickl_ach2">ICKL-6 Poster: Towards a complete mapping of Kurdish Dialectology</li>
-              <li data-i18n="projects.ickl_ach3">ICKL-7 Präsentation: Dialectal Filtering – Synthesize text corpora for Kurdish varieties (2025)</li>
+              <li data-i18n="projects.ickl_ach3">ICKL-7 Präsentation: Dialectal Filtering (2025)</li>
             </ul>
-            <a href="https://ickl-conference.org/" target="_blank" rel="noopener" class="inline-flex items-center gap-1 mt-4 text-sm text-primary hover:underline">
-              ickl-conference.org
-              <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-            </a>
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-xs">Linguistik</span>
+              <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-xs">Kurdisch</span>
+            </div>
+            <a href="https://ickl-conference.org/" target="_blank" rel="noopener" class="text-sm text-primary hover:underline">ickl-conference.org ↗</a>
           </div>
         </div>
 
-        <!-- ── EXPO 2024 – base.camp Informatik-Messe ── -->
-        <div class="bg-white dark:bg-gray-800/70 p-8 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 flex flex-col">
-          <div class="flex justify-between items-start mb-4">
-            <h3 data-i18n="projects.expo_title" class="text-2xl font-bold text-primary">base.camp EXPO 2024</h3>
-            <span class="inline-block px-4 py-1 bg-silver-100 bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 rounded-full text-sm font-medium">🥈 2. Platz</span>
+        <div class="project-card bg-white dark:bg-gray-800/70 p-8 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 flex flex-col" data-categories="nlp hackathon">
+          <div class="flex justify-between items-start mb-4 gap-2">
+            <h3 data-i18n="projects.expo_title" class="text-xl font-bold text-primary">base.camp EXPO 2024</h3>
+            <span class="shrink-0 px-3 py-1 bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200 rounded-full text-xs font-medium">🥈 2. Platz</span>
           </div>
-          <p class="text-gray-600 dark:text-gray-400 mb-4" data-i18n="projects.expo_period">Universität Hamburg · 2024</p>
-          <p class="mb-6" data-i18n="projects.expo_desc">Jährliche Informatik-Messe des base.camp während des Schnupperstudiums. Unser Forschungsprojekt <em>CRAMT</em> – ein Framework zur sprachübergreifenden Ressourcenaggregation für maschinelle Übersetzung in Low-Resource-Sprachen – überzeugte die Jury und gewann den zweiten Platz (200 €).</p>
+          <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm" data-i18n="projects.expo_period">Universität Hamburg · 2024</p>
+          <p class="mb-4 text-sm" data-i18n="projects.expo_desc">Projekt CRAMT – Framework zur sprachübergreifenden Ressourcenaggregation für Low-Resource-Sprachen – gewann den zweiten Platz (200 €).</p>
           <div class="mt-auto">
-            <p class="font-medium mb-2" data-i18n="projects.achievements">Erfolge:</p>
-            <ul class="list-disc pl-5 text-sm space-y-1 text-gray-700 dark:text-gray-300">
+            <ul class="list-disc pl-5 text-sm space-y-1 text-gray-700 dark:text-gray-300 mb-4">
               <li data-i18n="projects.expo_ach1">2. Platz &amp; 200 € Preisgeld</li>
               <li data-i18n="projects.expo_ach2">Cross-Lingual NLP für Low-Resource-Sprachen</li>
               <li data-i18n="projects.expo_ach3">Forschung mit Christian Schuler, Seid Muhie Yimam u. a.</li>
             </ul>
-            <a href="https://www.inf.uni-hamburg.de/inst/basecamp/blog/24-03-27-expo2024.html" target="_blank" rel="noopener" class="inline-flex items-center gap-1 mt-4 text-sm text-primary hover:underline">
-              EXPO 2024 Blog
-              <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-            </a>
+            <a href="https://www.inf.uni-hamburg.de/inst/basecamp/blog/24-03-27-expo2024.html" target="_blank" rel="noopener" class="text-sm text-primary hover:underline">EXPO 2024 Blog ↗</a>
           </div>
         </div>
 
-        <!-- ── AdCookie Clear – Firefox Extension ── -->
-        <div class="bg-white dark:bg-gray-800/70 p-8 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 flex flex-col">
-          <div class="flex justify-between items-start mb-4">
-            <h3 data-i18n="projects.acc_title" class="text-2xl font-bold text-primary">🍪 AdCookie Clear</h3>
-            <span class="inline-block px-4 py-1 bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 rounded-full text-sm font-medium" data-i18n="projects.ongoing">Laufend</span>
+        <div class="project-card bg-white dark:bg-gray-800/70 p-8 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 flex flex-col" data-categories="fullstack tools">
+          <div class="flex justify-between items-start mb-4 gap-2">
+            <h3 data-i18n="projects.kurdaboard_title" class="text-xl font-bold text-primary">KurdaBoard – Offline-Kanban-Workspace</h3>
+            <span class="shrink-0 px-3 py-1 bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 rounded-full text-xs font-medium" data-i18n="projects.ongoing">Laufend</span>
           </div>
-          <p class="text-gray-600 dark:text-gray-400 mb-4" data-i18n="projects.acc_period">Firefox Browser Extension • 2025</p>
-          <p class="mb-4" data-i18n="projects.acc_desc">Datenschutzorientierte Firefox-Extension, die Werbung blockiert, Cookie-Banner entfernt und Einwilligungs-Dialoge automatisch ablehnt. Arbeitet vollständig lokal – keine Datenweitergabe an externe Server.</p>
+          <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm" data-i18n="projects.kurdaboard_period">Persönliches Projekt • 2025</p>
+          <p class="mb-4 text-sm" data-i18n="projects.kurdaboard_desc">Offline-first Kanban. Vanilla JavaScript, IndexedDB, CSS Custom Properties – kein Build-Schritt.</p>
           <div class="mt-auto">
-            <p class="font-medium mb-2" data-i18n="projects.achievements">Features:</p>
-            <ul class="list-disc pl-5 text-sm space-y-1 text-gray-700 dark:text-gray-300">
+            <ul class="list-disc pl-5 text-sm space-y-1 text-gray-700 dark:text-gray-300 mb-4">
+              <li data-i18n="projects.kurdaboard_ach1">Drag &amp; Drop Kanban-Boards</li>
+              <li data-i18n="projects.kurdaboard_ach2">PWA – installierbar, 100 % offline</li>
+              <li data-i18n="projects.kurdaboard_ach3">JSON-Backup &amp; ARIA Accessibility</li>
+            </ul>
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-xs">Vanilla JS</span>
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-xs">IndexedDB</span>
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-xs">PWA</span>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              <a href="https://raman-ahmad.de/kurdaboard/" target="_blank" rel="noopener" class="text-sm text-primary hover:underline font-medium">🔗 Live Demo</a>
+              <a href="https://github.com/RamanAhmad/kurdaboard" target="_blank" rel="noopener" class="text-sm text-primary hover:underline font-medium">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card bg-white dark:bg-gray-800/70 p-8 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 flex flex-col" data-categories="tools">
+          <div class="flex justify-between items-start mb-4 gap-2">
+            <h3 data-i18n="projects.acc_title" class="text-xl font-bold text-primary">🍪 AdCookie Clear</h3>
+            <span class="shrink-0 px-3 py-1 bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 rounded-full text-xs font-medium" data-i18n="projects.ongoing">Laufend</span>
+          </div>
+          <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm" data-i18n="projects.acc_period">Firefox Browser Extension • 2025</p>
+          <p class="mb-4 text-sm" data-i18n="projects.acc_desc">Datenschutzorientierte Firefox-Extension. Cookie-Banner, Tracker und Ad-Domains – vollständig lokal.</p>
+          <div class="mt-auto">
+            <ul class="list-disc pl-5 text-sm space-y-1 text-gray-700 dark:text-gray-300 mb-4">
               <li data-i18n="projects.acc_ach1">200+ blockierte Ad-Domains &amp; Tracker</li>
               <li data-i18n="projects.acc_ach2">Auto-Ablehnen von Cookie-Bannern in 7 Sprachen</li>
               <li data-i18n="projects.acc_ach3">URL-Tracking-Entfernung &amp; HTTPS Upgrade</li>
             </ul>
-            <div class="flex flex-wrap gap-2 mt-4 mb-4">
-              <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">JavaScript</span>
-              <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">WebExtension API</span>
-              <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">Firefox</span>
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-xs">JavaScript</span>
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-xs">WebExtension API</span>
             </div>
-            <a href="https://github.com/RamanAhmad/adcookie-clear" target="_blank" rel="noopener"
-               class="inline-flex items-center gap-2 text-sm text-primary hover:underline font-medium">
-              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.73.08-.73 1.21.08 1.85 1.24 1.85 1.24 1.08 1.85 2.83 1.32 3.52 1.01.11-.78.42-1.32.76-1.62-2.67-.3-5.48-1.34-5.48-5.96 0-1.32.47-2.4 1.24-3.24-.12-.3-.54-1.53.12-3.19 0 0 1.01-.32 3.31 1.23.96-.27 1.98-.4 3-.41 1.02.01 2.04.14 3 .41 2.3-1.55 3.31-1.23 3.31-1.23.66 1.66.24 2.89.12 3.19.77.84 1.24 1.92 1.24 3.24 0 4.63-2.81 5.65-5.49 5.95.43.37.82 1.1.82 2.22v3.29c0 .32.22.69.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
-              GitHub ansehen
-            </a>
+            <a href="https://github.com/RamanAhmad/adcookie-clear" target="_blank" rel="noopener" class="text-sm text-primary hover:underline font-medium">GitHub ansehen</a>
           </div>
         </div>
 
-        <!-- ── Hackathon 1: Spring Hackathon CHECK24 2024 ── -->
-        <div class="bg-white dark:bg-gray-800/70 p-8 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 flex flex-col">
-          <div class="flex justify-between items-start mb-4">
-            <h3 data-i18n="projects.hack1_title" class="text-2xl font-bold text-primary">Spring Hackathon mit CHECK24 💡</h3>
-            <span class="inline-block px-4 py-1 bg-yellow-100 dark:bg-yellow-900/40 text-yellow-700 dark:text-yellow-300 rounded-full text-sm font-medium">🥉 3. Platz</span>
+        <div class="project-card bg-white dark:bg-gray-800/70 p-8 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 flex flex-col" data-categories="hackathon">
+          <div class="flex justify-between items-start mb-4 gap-2">
+            <h3 data-i18n="projects.hack1_title" class="text-xl font-bold text-primary">Spring Hackathon mit CHECK24 💡</h3>
+            <span class="shrink-0 px-3 py-1 bg-yellow-100 dark:bg-yellow-900/40 text-yellow-700 dark:text-yellow-300 rounded-full text-xs font-medium">🥉 3. Platz</span>
           </div>
-          <p class="text-gray-600 dark:text-gray-400 mb-4" data-i18n="projects.hack1_period">HAW Hamburg · 26. März 2024</p>
-          <p class="mb-6" data-i18n="projects.hack1_desc">Teambasierter Hackathon in Zusammenarbeit mit CHECK24 – kreatives Problemlösen unter Anleitung von Branchenexperten. Unser spontanes Projekt „Crazy Teaching" überzeugte die Jury und brachte uns den dritten Platz ein.</p>
+          <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm" data-i18n="projects.hack1_period">HAW Hamburg · 26. März 2024</p>
+          <p class="mb-4 text-sm" data-i18n="projects.hack1_desc">Teambasierter Hackathon mit CHECK24 – „Crazy Teaching" gewann den dritten Platz.</p>
           <div class="mt-auto">
-            <p class="font-medium mb-2" data-i18n="projects.achievements">Erfolge:</p>
             <ul class="list-disc pl-5 text-sm space-y-1 text-gray-700 dark:text-gray-300">
               <li data-i18n="projects.hack1_ach1">3. Platz mit Projekt „Crazy Teaching"</li>
               <li data-i18n="projects.hack1_ach2">Teamarbeit &amp; kreative Ideenfindung</li>
@@ -372,16 +185,14 @@
           </div>
         </div>
 
-        <!-- ── Hackathon 2: AI Applied – CHECK24 × Hackathon Hamburg ── -->
-        <div class="bg-white dark:bg-gray-800/70 p-8 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 flex flex-col">
-          <div class="flex justify-between items-start mb-4">
-            <h3 data-i18n="projects.hack2_title" class="text-2xl font-bold text-primary">AI: Applied – CHECK24 × Hackathon HH</h3>
-            <span class="inline-block px-4 py-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm font-medium" data-i18n="projects.completed">Abgeschlossen</span>
+        <div class="project-card bg-white dark:bg-gray-800/70 p-8 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 flex flex-col" data-categories="hackathon tools">
+          <div class="flex justify-between items-start mb-4 gap-2">
+            <h3 data-i18n="projects.hack2_title" class="text-xl font-bold text-primary">AI: Applied – CHECK24 × Hackathon HH</h3>
+            <span class="shrink-0 px-3 py-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-xs font-medium" data-i18n="projects.completed">Abgeschlossen</span>
           </div>
-          <p class="text-gray-600 dark:text-gray-400 mb-4" data-i18n="projects.hack2_period">CHECK24 · Hamburg</p>
-          <p class="mb-6" data-i18n="projects.hack2_desc">Abendlanger KI-Hackathon für Informatik-Studierende: In Teamarbeit entstand innerhalb weniger Stunden ein funktionierender Prototyp. Unser Projekt „Reality Filter" – ein Fake-News- &amp; Bias-Scanner – wurde als Firefox-Extension umgesetzt und analysiert X/Twitter-Posts auf Emotionalität, Manipulation und Einseitigkeit.</p>
+          <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm" data-i18n="projects.hack2_period">CHECK24 · Hamburg</p>
+          <p class="mb-4 text-sm" data-i18n="projects.hack2_desc">KI-Hackathon: „Reality Filter" – Fake-News- &amp; Bias-Scanner als Firefox-Extension, analysiert X/Twitter-Posts.</p>
           <div class="mt-auto">
-            <p class="font-medium mb-2" data-i18n="projects.achievements">Erfolge:</p>
             <ul class="list-disc pl-5 text-sm space-y-1 text-gray-700 dark:text-gray-300">
               <li data-i18n="projects.hack2_ach1">Firefox-Extension „Reality Filter" entwickelt</li>
               <li data-i18n="projects.hack2_ach2">LLM-gestützte Post-Analyse für X/Twitter</li>
@@ -390,353 +201,68 @@
           </div>
         </div>
 
-        <!-- vs-p2p-api -->
-        <div class="bg-white dark:bg-gray-800/70 p-8 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 flex flex-col">
-          <div class="flex justify-between items-start mb-4">
-            <h3 data-i18n="projects.p2p_title" class="text-2xl font-bold text-primary">vs-p2p-api</h3>
-            <span class="inline-block px-4 py-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-sm font-medium" data-i18n="projects.completed">Abgeschlossen</span>
+        <div class="project-card bg-white dark:bg-gray-800/70 p-8 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 flex flex-col" data-categories="uni fullstack">
+          <div class="flex justify-between items-start mb-4 gap-2">
+            <h3 data-i18n="projects.p2p_title" class="text-xl font-bold text-primary">vs-p2p-api</h3>
+            <span class="shrink-0 px-3 py-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-full text-xs font-medium" data-i18n="projects.completed">Abgeschlossen</span>
           </div>
-          <p class="text-gray-600 dark:text-gray-400 mb-4" data-i18n="projects.p2p_period">Team-Projekt • HAW Hamburg</p>
-          <p class="mb-6" data-i18n="projects.p2p_desc">P2P-Netzwerk-API, entwickelt im Team im Rahmen eines Uni-Projekts. Fokus auf verteilte Kommunikation und Peer-to-Peer-Architektur.</p>
-          <div class="mt-auto flex flex-wrap gap-2 mb-4">
-            <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">P2P</span>
-            <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm">Networking</span>
+          <p class="text-gray-600 dark:text-gray-400 mb-4 text-sm" data-i18n="projects.p2p_period">Team-Projekt • HAW Hamburg</p>
+          <p class="mb-4 text-sm" data-i18n="projects.p2p_desc">P2P-Netzwerk-API im Rahmen eines Uni-Projekts. Fokus auf verteilte Kommunikation und Peer-to-Peer-Architektur.</p>
+          <div class="mt-auto">
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-xs">P2P</span>
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-xs">Networking</span>
+            </div>
+            <a href="https://github.com/RamanAhmad/vs-p2p-api" target="_blank" rel="noopener" class="text-sm text-primary hover:underline font-medium">GitHub ansehen</a>
           </div>
-          <a href="https://github.com/RamanAhmad/vs-p2p-api" target="_blank" rel="noopener"
-             class="inline-flex items-center gap-2 text-sm text-primary hover:underline font-medium">
-            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.73.08-.73 1.21.08 1.85 1.24 1.85 1.24 1.08 1.85 2.83 1.32 3.52 1.01.11-.78.42-1.32.76-1.62-2.67-.3-5.48-1.34-5.48-5.96 0-1.32.47-2.4 1.24-3.24-.12-.3-.54-1.53.12-3.19 0 0 1.01-.32 3.31 1.23.96-.27 1.98-.4 3-.41 1.02.01 2.04.14 3 .41 2.3-1.55 3.31-1.23 3.31-1.23.66 1.66.24 2.89.12 3.19.77.84 1.24 1.92 1.24 3.24 0 4.63-2.81 5.65-5.49 5.95.43.37.82 1.1.82 2.22v3.29c0 .32.22.69.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
-            GitHub ansehen
-          </a>
         </div>
 
+      </div>
 
-
+      <div id="empty-state" class="hidden text-center py-20 text-gray-400">
+        <p class="text-2xl mb-2">🔍</p>
+        <p>Keine Projekte in dieser Kategorie gefunden.</p>
       </div>
     </div>
   </main>
 
-    <footer class="bg-gray-950 text-gray-400 py-12">
-    <div class="max-w-7xl mx-auto px-4">
-      <!-- Top row -->
-      <div class="flex flex-col md:flex-row justify-between items-start gap-10 mb-10">
-
-        <!-- Brand -->
-        <div class="reveal-stagger space-y-3">
-          <div class="text-3xl font-bold text-primary">RA</div>
-          <p class="text-sm max-w-xs text-gray-500">Fullstack Developer &amp; NLP Enthusiast · Hamburg</p>
-        </div>
-
-        <!-- Nav links -->
-        <div class="reveal-stagger grid grid-cols-2 sm:grid-cols-4 gap-x-12 gap-y-2 text-sm">
-          <a href="index.html"         data-i18n="nav.home"         class="hover:text-primary transition">Startseite</a>
-          <a href="ueber-mich.html"    data-i18n="nav.about"        class="hover:text-primary transition">Über mich</a>
-          <a href="forschung.html"     data-i18n="nav.research"     class="hover:text-primary transition">Forschung</a>
-          <a href="publikationen.html" data-i18n="nav.publications" class="hover:text-primary transition">Publikationen</a>
-          <a href="projekte.html"      data-i18n="nav.projects"     class="hover:text-primary transition">Projekte</a>
-          <a href="interviews.html"    data-i18n="nav.interviews"   class="hover:text-primary transition">Interviews</a>
-          <a href="cv.html"            data-i18n="nav.cv"           class="hover:text-primary transition">CV</a>
-          <a href="kontakt.html"       data-i18n="nav.contact"      class="hover:text-primary transition">Kontakt</a>
-        </div>
-
-        <!-- Social icons -->
-        <div class="flex items-center gap-4">
-          <a href="https://github.com/RamanAhmad" target="_blank" rel="noopener" aria-label="GitHub"
-             class="w-9 h-9 rounded-full bg-gray-800 hover:bg-primary flex items-center justify-center transition">
-            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.77-1.34-1.77-1.1-.75.08-.73.08-.73 1.21.08 1.85 1.24 1.85 1.24 1.08 1.85 2.83 1.32 3.52 1.01.11-.78.42-1.32.76-1.62-2.67-.3-5.48-1.34-5.48-5.96 0-1.32.47-2.4 1.24-3.24-.12-.3-.54-1.53.12-3.19 0 0 1.01-.32 3.31 1.23.96-.27 1.98-.4 3-.41 1.02.01 2.04.14 3 .41 2.3-1.55 3.31-1.23 3.31-1.23.66 1.66.24 2.89.12 3.19.77.84 1.24 1.92 1.24 3.24 0 4.63-2.81 5.65-5.49 5.95.43.37.82 1.1.82 2.22v3.29c0 .32.22.69.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
-          </a>
-          <a href="https://www.linkedin.com/in/raman-ahmad-5243ab30b/" target="_blank" rel="noopener" aria-label="LinkedIn"
-             class="w-9 h-9 rounded-full bg-gray-800 hover:bg-primary flex items-center justify-center transition">
-            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-1.337-.029-3.058-1.867-3.058-1.867 0-2.152 1.459-2.152 2.966v5.696h-3v-11h2.882v1.509h.039c.401-.757 1.381-1.557 2.837-1.557 3.033 0 3.597 1.997 3.597 4.597v6.451z"/></svg>
-          </a>
-          <a href="https://orcid.org/0009-0001-8012-3945" target="_blank" rel="noopener" aria-label="ORCID"
-             class="w-9 h-9 rounded-full bg-gray-800 hover:bg-primary flex items-center justify-center transition">
-            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
-          </a>
-          <a href="https://www.youtube.com/c/Kurd%C3%AEBiH%C3%AAsan%C3%AE" target="_blank" rel="noopener" aria-label="YouTube"
-             class="w-9 h-9 rounded-full bg-gray-800 hover:bg-primary flex items-center justify-center transition">
-            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.276 1.105-1.08 1.97-2.186 2.246C18.72 20 12 20 12 20s-6.72 0-8.357-.252c-1.106-.276-1.91-1.141-2.186-2.246C2 15.72 2 12 2 12s0-3.72.457-5.502c.276-1.105 1.08-1.97 2.186-2.246C5.28 4 12 4 12 4s6.72 0 8.357.252c1.106.276 1.91 1.141 2.186 2.246zM10 15.5l6-3.5-6-3.5v7z"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <!-- Divider -->
-      <div class="border-t border-gray-800 pt-6 text-center text-sm">
-        <p data-i18n="footer.copyright">© 2026 Raman Ahmad – Alle Rechte vorbehalten.</p>
-        <div class="mt-2 flex justify-center gap-4 text-gray-500">
-          <a href="impressum.html" class="hover:text-primary transition">Impressum</a>
-          <span>·</span>
-          <a href="datenschutz.html" class="hover:text-primary transition">Datenschutz</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
   <script>
-    const translations = {
-      de: {
-        'nav.home':'Startseite','nav.about':'Über mich','nav.research':'Forschung','nav.publications':'Publikationen','nav.projects':'Projekte','nav.interviews':'Interviews','nav.cv':'CV','nav.contact':'Kontakt',
-        'projects.title':'Aktuelle & abgeschlossene Projekte','projects.subtitle':'Überblick über meine Entwicklungs- und Forschungsprojekte.',
-        'projects.ongoing':'Laufend','projects.completed':'Abgeschlossen','projects.achievements':'Erfolge:',
-        'projects.dps_title':'Fullstack Entwicklung bei DPS','projects.dps_period':'DPS Engineering GmbH • 04/2021 – heute','projects.dps_desc':'Fullstack-Entwicklung mit Spring Boot (Java) und React/TypeScript, Qualitätssicherung durch Tests und Code-Reviews sowie agile Zusammenarbeit in Scrum-Teams.',
-        'projects.dps_ach1':'RESTful APIs mit Spring Boot & React/TypeScript','projects.dps_ach2':'Unit-, Integrations- & E2E-Tests (JUnit, Selenium)','projects.dps_ach3':'CI/CD-Pipelines mit Jenkins & Docker','projects.dps_ach4':'DB-Migrationen mit Liquibase','projects.dps_ach5':'Tägliche Nutzung von GitHub Copilot & ChatGPT',
-        'projects.kurdaboard_title':'KurdaBoard – Offline-Kanban-Workspace','projects.kurdaboard_period':'Persönliches Projekt • 2025',
-        'projects.kurdaboard_desc':'Offline-first Kanban- und Projekt-Workspace. Zwei Dateien, null Abhängigkeiten, kein Build-Schritt. Vanilla JavaScript, IndexedDB und CSS Custom Properties – läuft vollständig im Browser.',
-        'projects.kurdaboard_ach1':'Drag & Drop Kanban-Boards (To Do / In Progress / Done)','projects.kurdaboard_ach2':'PWA – installierbar, 100 % offline, Daten bleiben lokal','projects.kurdaboard_ach3':'JSON-Backup, Tastaturnavigation & ARIA Accessibility',
-        'projects.thesis_title':'Bachelor-Thesis: Maschinelle Übersetzung','projects.thesis_period':'HAW Hamburg • 2021 – 2026','projects.thesis_desc':'Hybrider Ansatz zur maschinellen Übersetzung für die Kobani-Variante des Kurmanji (Low-Resource NLP). Fine-Tuning des NLLB-200-Modells – zwei öffentliche HuggingFace-Modelle.',
-        'projects.thesis_ach1':'Korpus-Aufbau für Kobani-Kurmanji','projects.thesis_ach2':'Fine-Tuning NLLB-200 (kob_Latn ↔ eng)','projects.thesis_ach3':'2 veröffentlichte HuggingFace-Modelle',
-        'projects.ickl_title':'ICKL-6 & ICKL-7 – Kurdische Dialektologie','projects.ickl_period':'ICKL-Konferenz • 2023 & Aug. 2025','projects.ickl_desc':'Forschungsbeiträge zur kurdischen Dialektologie – zwei Poster bei ICKL-6 (2023) und eine Präsentation bei ICKL-7 (2025).',
-        'projects.ickl_ach1':'ICKL-6 Poster: Analysis of Phonology and Morphology in the Kobani Dialect','projects.ickl_ach2':'ICKL-6 Poster: Towards a complete mapping of Kurdish Dialectology','projects.ickl_ach3':'ICKL-7 Präsentation: Dialectal Filtering – Synthesize text corpora for Kurdish varieties (2025)',
-        'projects.hack1_title':'Spring Hackathon mit CHECK24 💡','projects.hack1_period':'HAW Hamburg · 26. März 2024',
-        'projects.hack1_desc':'Teambasierter Hackathon mit CHECK24 – kreatives Problemlösen unter Anleitung von Branchenexperten. Unser spontanes Projekt „Crazy Teaching" überzeugte die Jury und brachte uns den dritten Platz ein.',
-        'projects.hack1_ach1':'3. Platz mit Projekt „Crazy Teaching"','projects.hack1_ach2':'Teamarbeit & kreative Ideenfindung','projects.hack1_ach3':'Mentoring durch CHECK24-Expert:innen',
-        'projects.expo_title':'base.camp EXPO 2024','projects.expo_period':'Universität Hamburg · 2024',
-        'projects.expo_desc':'Jährliche Informatik-Messe des base.camp. Unser Projekt CRAMT – Framework zur sprachübergreifenden Ressourcenaggregation für maschinelle Übersetzung in Low-Resource-Sprachen – gewann den zweiten Platz.',
-        'projects.expo_ach1':'2. Platz & 200 € Preisgeld','projects.expo_ach2':'Cross-Lingual NLP für Low-Resource-Sprachen','projects.expo_ach3':'Forschung mit Christian Schuler, Seid Muhie Yimam u. a.',        'projects.hack2_title':'AI: Applied – CHECK24 × Hackathon HH','projects.hack2_period':'CHECK24 · Hamburg',
-        'projects.hack2_desc':'Abendlanger KI-Hackathon für Informatik-Studierende: In Teamarbeit entstand ein funktionierender Prototyp. Unser Projekt „Reality Filter" – ein Fake-News- & Bias-Scanner – wurde als Firefox-Extension umgesetzt und analysiert X/Twitter-Posts auf Emotionalität, Manipulation und Einseitigkeit.',
-        'projects.hack2_ach1':'Firefox-Extension „Reality Filter" entwickelt','projects.hack2_ach2':'LLM-gestützte Post-Analyse für X/Twitter','projects.hack2_ach3':'Erkennung von Bias, Manipulation & fehlenden Quellen',
-        'projects.p2p_title':'vs-p2p-api','projects.p2p_period':'Team-Projekt • HAW Hamburg',
-        'projects.p2p_desc':'P2P-Netzwerk-API, entwickelt im Team im Rahmen eines Uni-Projekts. Fokus auf verteilte Kommunikation und Peer-to-Peer-Architektur.',
-        'projects.puzzle_title':'8-Puzzle Problem','projects.puzzle_period':'Uni-Projekt • HAW Hamburg',
-        'projects.puzzle_desc':'Lösung des klassischen 8-Puzzle-Problems mit KI-Suchalgorithmen (A*, BFS, DFS) in Python.',
-        'projects.acc_title':'🍪 AdCookie Clear','projects.acc_period':'Firefox Browser Extension • 2025',
-        'projects.acc_desc':'Datenschutzorientierte Firefox-Extension, die Werbung blockiert, Cookie-Banner entfernt und Einwilligungs-Dialoge automatisch ablehnt. Arbeitet vollständig lokal – keine Datenweitergabe.',
-        'projects.acc_ach1':'200+ blockierte Ad-Domains & Tracker','projects.acc_ach2':'Auto-Ablehnen von Cookie-Bannern in 7 Sprachen','projects.acc_ach3':'URL-Tracking-Entfernung & HTTPS Upgrade',
-        'footer.copyright':'© 2026 Raman Ahmad – Alle Rechte vorbehalten.',
-      },
-      en: {
-        'nav.home':'Home','nav.about':'About Me','nav.research':'Research','nav.publications':'Publications','nav.projects':'Projects','nav.interviews':'Interviews','nav.cv':'CV','nav.contact':'Contact',
-        'projects.title':'Current & Completed Projects','projects.subtitle':'Overview of my development and research projects.',
-        'projects.ongoing':'Ongoing','projects.completed':'Completed','projects.achievements':'Achievements:',
-        'projects.dps_title':'Fullstack Development at DPS','projects.dps_period':'DPS Engineering GmbH • 04/2021 – present','projects.dps_desc':'Fullstack development with Spring Boot (Java) and React/TypeScript, quality assurance through testing and code reviews, agile collaboration in Scrum teams.',
-        'projects.dps_ach1':'RESTful APIs with Spring Boot & React/TypeScript','projects.dps_ach2':'Unit, integration & E2E tests (JUnit, Selenium)','projects.dps_ach3':'CI/CD pipelines with Jenkins & Docker','projects.dps_ach4':'DB migrations with Liquibase','projects.dps_ach5':'Daily use of GitHub Copilot & ChatGPT',
-        'projects.kurdaboard_title':'KurdaBoard – Offline Kanban Workspace','projects.kurdaboard_period':'Side Project • 2025',
-        'projects.kurdaboard_desc':'Offline-first Kanban & project workspace. Two files, zero dependencies, zero build step. Vanilla JavaScript, IndexedDB, and CSS custom properties – runs entirely in the browser.',
-        'projects.kurdaboard_ach1':'Drag & drop Kanban boards (To Do / In Progress / Done)','projects.kurdaboard_ach2':'PWA – installable, 100% offline, data never leaves the browser','projects.kurdaboard_ach3':'JSON backup system, keyboard navigation & ARIA accessibility',
-        'projects.thesis_title':'Bachelor Thesis: Machine Translation','projects.thesis_period':'HAW Hamburg • 2021 – 2026','projects.thesis_desc':'Hybrid approach to machine translation for the Kobani variant of Kurmanji (low-resource NLP). Fine-tuned NLLB-200 – two public HuggingFace models.',
-        'projects.thesis_ach1':'Corpus building for Kobani Kurmanji','projects.thesis_ach2':'Fine-tuning NLLB-200 (kob_Latn ↔ eng)','projects.thesis_ach3':'2 published HuggingFace models',
-        'projects.ickl_title':'ICKL-6 & ICKL-7 – Kurdish Dialectology','projects.ickl_period':'ICKL Conference • 2023 & Aug. 2025','projects.ickl_desc':'Research contributions to Kurdish dialectology – two posters at ICKL-6 (2023) and a presentation at ICKL-7 (2025).',
-        'projects.ickl_ach1':'ICKL-6 Poster: Analysis of Phonology and Morphology in the Kobani Dialect','projects.ickl_ach2':'ICKL-6 Poster: Towards a complete mapping of Kurdish Dialectology','projects.ickl_ach3':'ICKL-7 Talk: Dialectal Filtering – Synthesize text corpora for Kurdish varieties (2025)',
-        'projects.hack1_title':'Spring Hackathon with CHECK24 💡','projects.hack1_period':'HAW Hamburg · 26 March 2024',
-        'projects.hack1_desc':'Team-based hackathon with CHECK24 – creative problem solving guided by industry experts. Our spontaneous project "Crazy Teaching" impressed the jury and earned us third place.',
-        'projects.hack1_ach1':'3rd place with project "Crazy Teaching"','projects.hack1_ach2':'Teamwork & creative ideation','projects.hack1_ach3':'Mentoring by CHECK24 experts',
-        'projects.expo_title':'base.camp EXPO 2024','projects.expo_period':'University of Hamburg · 2024',
-        'projects.expo_desc':'Annual computer science fair by base.camp. Our project CRAMT – a framework for cross-lingual resource aggregation for low-resource machine translation – won second place.',
-        'projects.expo_ach1':'2nd place & €200 prize','projects.expo_ach2':'Cross-lingual NLP for low-resource languages','projects.expo_ach3':'Research with Christian Schuler, Seid Muhie Yimam et al.',
-        'projects.hack2_title':'AI: Applied – CHECK24 × Hackathon HH','projects.hack2_period':'CHECK24 · Hamburg',
-        'projects.hack2_desc':'An evening AI hackathon for computer science students: working as a team we built a functioning prototype in just a few hours. Our project "Reality Filter" – a fake-news & bias scanner – was released as a Firefox extension that analyses X/Twitter posts for emotionality, manipulation, and one-sidedness.',
-        'projects.hack2_ach1':'Firefox extension "Reality Filter" built','projects.hack2_ach2':'LLM-powered post analysis for X/Twitter','projects.hack2_ach3':'Detection of bias, manipulation & missing sources',
-        'projects.p2p_title':'vs-p2p-api','projects.p2p_period':'Team Project • HAW Hamburg',
-        'projects.p2p_desc':'P2P network API developed as part of a university team project. Focus on distributed communication and peer-to-peer architecture.',
-        'projects.puzzle_title':'8-Puzzle Problem','projects.puzzle_period':'University Project • HAW Hamburg',
-        'projects.puzzle_desc':'Solution to the classic 8-puzzle problem using AI search algorithms (A*, BFS, DFS) in Python.',
-        'projects.acc_title':'🍪 AdCookie Clear','projects.acc_period':'Firefox Browser Extension • 2025',
-        'projects.acc_desc':'Privacy-focused Firefox extension that blocks ads, removes cookie banners, and automatically rejects consent dialogs. Runs entirely locally – no data is shared.',
-        'projects.acc_ach1':'200+ blocked ad domains & trackers','projects.acc_ach2':'Auto-rejects cookie banners in 7 languages','projects.acc_ach3':'URL tracking removal & HTTPS upgrade',
-        'footer.copyright':'© 2026 Raman Ahmad – All rights reserved.',
-      },
-      ku: {
-        'nav.home':'Mal','nav.about':'Li ser min','nav.research':'Lêkolîn','nav.publications':'Weşan','nav.projects':'Proje','nav.interviews':'Hevpeyivîn','nav.cv':'CV','nav.contact':'Têkilî',
-        'projects.title':'Projeyên Niha & Qediyayî','projects.subtitle':'Nêrîna giştî li ser projeyên pêşxistin û lêkolînê yên min.',
-        'projects.ongoing':'Dewam dike','projects.completed':'Qediya','projects.achievements':'Destkeftî:',
-        'projects.dps_title':'Pêşxistina Fullstack li DPS','projects.dps_period':'DPS Engineering GmbH • 04/2021 – îro','projects.dps_desc':'Pêşxistina Fullstack bi Spring Boot û React/TypeScript, garantiya kalîteyê bi test û nirxandinên kodê, hevkariya agile di tîmên Scrum de.',
-        'projects.dps_ach1':'API-yên RESTful bi Spring Boot & React/TypeScript','projects.dps_ach2':'Testên Unit, Entegrasyon & E2E (JUnit, Selenium)','projects.dps_ach3':'Pipeline-yên CI/CD bi Jenkins & Docker','projects.dps_ach4':'Migrasyonên DB bi Liquibase','projects.dps_ach5':'Karanîna rojane ya GitHub Copilot & ChatGPT',
-        'projects.kurdaboard_title':'KurdaBoard – Kaneban Offline','projects.kurdaboard_period':'Projeya Kesane • 2025',
-        'projects.kurdaboard_desc':'Cîhê xebatê yê Kaneban û projeya offline-first. Du pelan, sifir girêdan, tu gavek avakirinê nîn e. JavaScript xwerû, IndexedDB û taybetmendiyên CSS – bi tevahî di gerokê de dixebite.',
-        'projects.kurdaboard_ach1':'Kaneban bi kaşandin & avêtinê (To Do / In Progress / Done)','projects.kurdaboard_ach2':'PWA – sazkirî, 100% offline, daneyên te cîhazê te naktêvin','projects.kurdaboard_ach3':'Pergala rezerva JSON, navîgasyona klavyeyê & ketina ARIA',
-        'projects.thesis_title':'Teza Bachelor: Wergera Makîneyê','projects.thesis_period':'HAW Hamburg • 2021 – 2026','projects.thesis_desc':'Nêzîkbûna hîbrîd ji bo wergera guhertoya Kobanî ya Kurmanjî. Fine-Tuning NLLB-200 – du modelên giştî yên HuggingFace.',
-        'projects.thesis_ach1':'Avakirina korpusê ji bo Kurmanjiya Kobanî','projects.thesis_ach2':'Fine-Tuning NLLB-200 (kob_Latn ↔ eng)','projects.thesis_ach3':'2 modelên weşandî yên HuggingFace',
-        'projects.ickl_title':'ICKL-6 & ICKL-7 – Diyalektolojiya Kurdî','projects.ickl_period':'Konferansa ICKL • 2023 & Tebax 2025','projects.ickl_desc':'Beşdariyên lêkolînê yên diyalektolojiya Kurdî – du poster li ICKL-6 û pêşkêşiyek li ICKL-7.',
-        'projects.ickl_ach1':'ICKL-6 Poster: Analîza Fonoloji û Morfolojî ya Dîalektê Kobanî','projects.ickl_ach2':'ICKL-6 Poster: Ber bi nexşeyek temam a Diyalektolojiya Kurdî','projects.ickl_ach3':'ICKL-7 Pêşkêşî: Dialectal Filtering – Corpus ji bo cure-cureyên Kurdî (2025)',
-        'projects.hack1_title':'Spring Hackathon bi CHECK24 💡','projects.hack1_period':'HAW Hamburg · 26. Adar 2024',
-        'projects.hack1_desc':'Hackathoneke tîmî bi CHECK24 re – çareserkirina pirsgirêkên afirîner bi rêberiya pisporên sektora pîşesaziyê. Projeya me ya spontane „Crazy Teaching" jûrî razî kir û me cihê sêyemîn girt.',
-        'projects.hack1_ach1':'Cihê 3emîn bi projeya „Crazy Teaching"','projects.hack1_ach2':'Xebata tîmê & afirîneriya ramanê','projects.hack1_ach3':'Mentorîng ji pisporên CHECK24',
-        'projects.expo_title':'base.camp EXPO 2024','projects.expo_period':'Zanîngeha Hamburgê · 2024',
-        'projects.expo_desc':'Pêşangeha Informatikê ya salane ya base.camp. Projeya me CRAMT – çarçoveyek ji bo komkirina çavkaniyên ziman-berendam ji bo wergerandina makîneyê – cihê duyemîn girt.',
-        'projects.expo_ach1':'Cihê 2emîn & 200 € xelat','projects.expo_ach2':'NLP ya ziman-berendam ji bo zimanên kêm-çavkaniyan','projects.expo_ach3':'Lêkolîn bi Christian Schuler, Seid Muhie Yimam û din',
-        'projects.hack2_title':'AI: Applied – CHECK24 × Hackathon HH','projects.hack2_period':'CHECK24 · Hamburg',
-        'projects.hack2_desc':'Hackathona AI ya êvarê ji bo xwendekarên Informatikê: wekî tîm di saetên hindik de prototîpeke xebitandî avakirin. Projeya me „Reality Filter" – skanerek ji bo Nûçeyên Derewîn & Bias – wekî pêveka Firefox hate bicîhkirin û şîroveyên X/Twitter analîz dike.',
-        'projects.hack2_ach1':'Pêveka Firefox „Reality Filter" hat çêkirin','projects.hack2_ach2':'Analîza şîroveyê ya LLM-based ji bo X/Twitter','projects.hack2_ach3':'Tespîtkirina bias, manîpulasyon & çavkaniyên winda',
-        'projects.p2p_title':'vs-p2p-api','projects.p2p_period':'Projeya Tîmê • HAW Hamburg',
-        'projects.p2p_desc':'API-ya torê P2P, di çarçoveya projeyek zanîngehê de bi tîmek re hat pêşxistin. Fokus li ser ragihandina belav û mîmariya peer-to-peer.',
-        'projects.puzzle_title':'Pirsgirêka 8-Puzzle','projects.puzzle_period':'Projeya Zanîngehê • HAW Hamburg',
-        'projects.puzzle_desc':'Çareseriya pirsgirêka klasîk a 8-Puzzle bi algorîtmayên lêgerîna AI (A*, BFS, DFS) bi Python.',
-        'projects.acc_title':'🍪 AdCookie Clear','projects.acc_period':'Firefox Browser Extension • 2025',
-        'projects.acc_desc':'Pêveka Firefox-ê ya mafên taybetî, ku reklam disprêve, bannerên cookie-ê radike û diyalogên razîbûnê bixweber red dike. Bi tevahî herêmî dixebite – tu daneya kesane nayê şandin.',
-        'projects.acc_ach1':'200+ domainên reklamê & şopker hatine astengkirin','projects.acc_ach2':'Di 7 zimanan de bannerên cookie-ê bixweber red dike','projects.acc_ach3':'Rakirina şopkirina URL & nûvekirina HTTPS',
-        'footer.copyright':'© 2026 Raman Ahmad – Hemû Mafên Parastî ne.',
-      },
-      ckb: {
-        'nav.home':'ماڵ','nav.about':'دەربارەی من','nav.research':'توێژینەوە','nav.publications':'بڵاوکراوەکان','nav.projects':'پڕۆژەکان','nav.interviews':'چاوپێکەوتنەکان','nav.cv':'CV','nav.contact':'پەیوەندی',
-        'projects.title':'پڕۆژەکانی ئێستا و تەواوکراوەکان','projects.subtitle':'چاوەڕوانی گشتی لە پڕۆژەکانی پەرەپێدان و توێژینەوەی من.',
-        'projects.ongoing':'بەردەوام','projects.completed':'تەواوکراو','projects.achievements':'دەستکەوتەکان:',
-        'projects.dps_title':'پەرەپێدانی Fullstack لە DPS','projects.dps_period':'DPS Engineering GmbH • 04/2021 – ئێستا','projects.dps_desc':'پەرەپێدانی Fullstack بە Spring Boot و React/TypeScript، دڵنیاکردنەوەی کوالیتی لە ڕێگەی تاقیکردنەوە و کۆدریڤیوی ئاگایانە و هاوبەشکاری ئەجایل لە تیمەکانی Scrum.',
-        'projects.dps_ach1':'API-ی RESTful بە Spring Boot & React/TypeScript','projects.dps_ach2':'تاقیکردنەوەی Unit, Integration & E2E (JUnit, Selenium)','projects.dps_ach3':'Pipeline-ی CI/CD بە Jenkins & Docker','projects.dps_ach4':'گواستنەوەی DB بە Liquibase','projects.dps_ach5':'بەکارهێنانی ڕۆژانەی GitHub Copilot & ChatGPT',
-        'projects.kurdaboard_title':'KurdaBoard – کانبانی ئۆفلاین','projects.kurdaboard_period':'پڕۆژەی تایبەتی • 2025',
-        'projects.kurdaboard_desc':'شوێنی کارکردنی کانبان و پڕۆژەی offline-first. دوو فایل، هیچ پەیوەندییەک نییە، هیچ هەنگاوی بیناکردن نییە. JavaScript سادە، IndexedDB و تایبەتمەندییەکانی CSS – بە تەواوی لە براوزەر کار دەکات.',
-        'projects.kurdaboard_ach1':'کانبانی کێشان و فرتانی (To Do / In Progress / Done)','projects.kurdaboard_ach2':'PWA – دامەزراو، ١٠٠٪ ئۆفلاین، داتاکانت براوزەر نابەزێت','projects.kurdaboard_ach3':'سیستەمی پاڵپشتی JSON، ناڤیگەیشنی کیبۆرد و ARIA',
-        'projects.thesis_title':'تەزای بەکالۆریۆس: وەرگێڕانی ماشین','projects.thesis_period':'HAW Hamburg • 2021 – 2026','projects.thesis_desc':'نزیکبوونەوەی هایبرید بۆ وەرگێڕانی جۆری کۆبانی کورمانجی. Fine-Tuning NLLB-200 – دوو مۆدێلی گشتی لە HuggingFace.',
-        'projects.thesis_ach1':'بنیاتنانی کۆرپوسی کورمانجی کۆبانی','projects.thesis_ach2':'Fine-Tuning NLLB-200 (kob_Latn ↔ eng)','projects.thesis_ach3':'٢ مۆدێلی بڵاوکراوە لە HuggingFace',
-        'projects.ickl_title':'ICKL-6 & ICKL-7 – دیالێکتزانیی کوردی','projects.ickl_period':'کۆنفرانسی ICKL • 2023 & ئاب 2025','projects.ickl_desc':'بەشدارییە توێژینەوەییەکان لە دیالێکتزانیی کوردی – دوو پوستەر لە ICKL-6 و پێشکەشکردن لە ICKL-7.',
-        'projects.ickl_ach1':'ICKL-6 پوستەر: شیکاری فۆنۆلۆجی و مۆرفۆلۆجی لە دیالێکتی کۆبانی','projects.ickl_ach2':'ICKL-6 پوستەر: بەرەو نەخشەی تەواوی دیالێکتزانیی کوردی','projects.ickl_ach3':'ICKL-7 پێشکەشکردن: Dialectal Filtering – کۆرپوس بۆ جۆرەکانی کوردی (2025)',
-        'projects.hack1_title':'Spring Hackathon لەگەڵ CHECK24 💡','projects.hack1_period':'HAW Hamburg · ٢٦ی ئازار ٢٠٢٤',
-        'projects.hack1_desc':'هاکاتۆنی تیمی لەگەڵ CHECK24 – چارەسەرکردنی دیاردەی دروستکارانە بە ڕێنمایی پسپۆڕانی پیشەسازی. پڕۆژەی بەشداری „Crazy Teaching" دادگا ڕازی کرد و شوێنی سێیەممان بۆ هێنا.',
-        'projects.hack1_ach1':'شوێنی ٣ەم بە پڕۆژەی „Crazy Teaching"','projects.hack1_ach2':'کارکردنی تیمی & دروستکاری','projects.hack1_ach3':'مەنتۆرینگ لە پسپۆڕانی CHECK24',
-        'projects.expo_title':'base.camp EXPO 2024','projects.expo_period':'زانکۆی هامبورگ · ٢٠٢٤',
-        'projects.expo_desc':'ئێکسپۆی ساڵانەی ئینفۆرماتیکی base.camp. پڕۆژەی CRAMT – چوارچێوەیەک بۆ کۆکردنەوەی سەرچاوەی زمانی کراسی بۆ وەرگێڕانی ماشین – شوێنی دووەمی بردەوە.',
-        'projects.expo_ach1':'شوێنی ٢ەم & ٢٠٠ € خەڵات','projects.expo_ach2':'NLP کراس-زمانی بۆ زمانەکانی کەم-سەرچاوە','projects.expo_ach3':'توێژینەوە لەگەڵ Christian Schuler، Seid Muhie Yimam و تر',
-        'projects.hack2_title':'AI: Applied – CHECK24 × Hackathon HH','projects.hack2_period':'CHECK24 · هامبورگ',
-        'projects.hack2_desc':'هاکاتۆنی AI یەکەمالی بۆ خوێندکارانی ئینفۆرماتیک: بە تیم لە کەمێک کاتژمێر پڕۆتۆتایپێکی کارکردن دروستکرا. پڕۆژەی „Reality Filter" – سکانەرێک بۆ هەواڵی درۆ & Bias – وەک پێوەندەی Firefox جێبەجێکرا و پۆستەکانی X/Twitter شیکاری دەکات.',
-        'projects.hack2_ach1':'پێوەندەی Firefox „Reality Filter" دروستکرا','projects.hack2_ach2':'شیکاری پۆستی LLM-based بۆ X/Twitter','projects.hack2_ach3':'دۆزینەوەی bias، مانیپولاسیۆن و سەرچاوەی نەبوون',
-        'projects.p2p_title':'vs-p2p-api','projects.p2p_period':'پڕۆژەی تیم • HAW Hamburg',
-        'projects.p2p_desc':'P2P تۆڕ API، لە چوارچێوەی پڕۆژەیەکی زانکۆیی لەگەڵ تیمێک پەرەی پێدراوە. فۆکەس لەسەر پەیوەندی دابەشکراو و ئەرکیتێکچەری peer-to-peer.',
-        'projects.puzzle_title':'کێشەی 8-Puzzle','projects.puzzle_period':'پڕۆژەی زانکۆ • HAW Hamburg',
-        'projects.puzzle_desc':'چارەسەری کێشەی کلاسیکی 8-Puzzle بە ئەلگۆریتمەکانی گەڕانی AI (A*, BFS, DFS) بە Python.',
-        'projects.acc_title':'🍪 AdCookie Clear','projects.acc_period':'Firefox Browser Extension • 2025',
-        'projects.acc_desc':'پێوەندەی Firefox-ی تایبەت بە تازەبوونی نهێنی، کە ڕیکلام بلۆک دەکات، بانەری کووکی لادەبات و دیالۆگەکانی ئەمانەت بەخۆیەوە ڕەت دەکاتەوە. بە تەواوی لە ناوخۆ کار دەکات.',
-        'projects.acc_ach1':'200+ دۆمەینی ڕیکلام و شوێنکەوتووی بلۆک کراون','projects.acc_ach2':'بانەری کووکی بەخۆیەوە لە ٧ زمان ڕەت دەکاتەوە','projects.acc_ach3':'سڕینەوەی شوێنکەوتنی URL و بەرزکردنەوەی HTTPS',
-        'footer.copyright':'© ٢٠٢٦ رەمان ئەحمەد – هەموو مافەکان پارێزراون.',
-      },
-      ar: {
-        'nav.home':'الرئيسية','nav.about':'عنّي','nav.research':'البحث','nav.publications':'المنشورات','nav.projects':'المشاريع','nav.interviews':'المقابلات','nav.cv':'السيرة الذاتية','nav.contact':'التواصل',
-        'projects.title':'المشاريع الحالية والمكتملة','projects.subtitle':'نظرة عامة على مشاريع التطوير والبحث.',
-        'projects.ongoing':'جارٍ','projects.completed':'مكتمل','projects.achievements':'الإنجازات:',
-        'projects.kurdaboard_title':'KurdaBoard – لوح كانبان بلا اتصال','projects.kurdaboard_period':'مشروع شخصي • 2025',
-        'projects.kurdaboard_desc':'تطبيق كانبان ومساحة عمل كاملة يعمل بدون إنترنت – ملفّان فقط، بدون تبعيات أو خطوة بناء. JavaScript خالص وIndexedDB وCSS مخصص.',
-        'projects.kurdaboard_ach1':'سحب وإفلات بين أعمدة كانبان','projects.kurdaboard_ach2':'تطبيق PWA قابل للتثبيت بدون اتصال كامل','projects.kurdaboard_ach3':'نسخ احتياطي JSON ودعم لوحة المفاتيح',
-        'projects.dps_title':'تطوير Fullstack في DPS','projects.dps_period':'DPS Engineering GmbH • 04/2021 – الآن',
-        'projects.dps_desc':'تطوير Fullstack بـ Spring Boot وReact/TypeScript، وضمان الجودة عبر الاختبارات ومراجعات الكود.',
-        'projects.dps_ach1':'واجهات RESTful بـ Spring Boot & React/TypeScript','projects.dps_ach2':'اختبارات Unit وIntegration وE2E','projects.dps_ach3':'خطوط CI/CD بـ Jenkins & Docker','projects.dps_ach4':'ترحيل قواعد البيانات بـ Liquibase','projects.dps_ach5':'الاستخدام اليومي لـ GitHub Copilot & ChatGPT',
-        'projects.thesis_title':'أطروحة البكالوريوس: الترجمة الآلية','projects.thesis_period':'HAW هامبورغ • 2021 – 2026',
-        'projects.thesis_desc':'نهج هجين للترجمة الآلية لمتغيّر كوباني من الكرمانجية. ضبط NLLB-200 – نموذجان عامان على HuggingFace.',
-        'projects.thesis_ach1':'بناء مدوّنة لغوية لكرمانجي كوباني','projects.thesis_ach2':'ضبط NLLB-200 (kob_Latn ↔ eng)','projects.thesis_ach3':'نموذجان منشوران على HuggingFace',
-        'projects.ickl_title':'ICKL-6 & ICKL-7 – اللهجات الكردية','projects.ickl_period':'مؤتمر ICKL • 2023 وأغسطس 2025',
-        'projects.ickl_desc':'مساهمات بحثية في اللهجات الكردية – ملصقان في ICKL-6 وعرض في ICKL-7.',
-        'projects.ickl_ach1':'ملصق ICKL-6: تحليل الصوتيات والصرف في لهجة كوباني','projects.ickl_ach2':'ملصق ICKL-6: نحو رسم كامل لعلم اللهجات الكردية','projects.ickl_ach3':'عرض ICKL-7: الترشيح اللهجي – بناء مدوّنات نصية لأصناف الكردية (2025)',
-        'projects.hack1_title':'هاكاثون الربيع مع CHECK24 💡','projects.hack1_period':'HAW هامبورغ · 26 مارس 2024',
-        'projects.hack1_desc':'هاكاثون جماعي مع CHECK24 – حل إبداعي للمشكلات بإشراف خبراء الصناعة. فاز مشروعنا المرتجل "Crazy Teaching" بالمرتبة الثالثة.',
-        'projects.hack1_ach1':'المرتبة 3 بمشروع "Crazy Teaching"','projects.hack1_ach2':'العمل الجماعي والإبداع','projects.hack1_ach3':'إرشاد من خبراء CHECK24',
-        'projects.expo_title':'base.camp EXPO 2024','projects.expo_period':'جامعة هامبورغ · 2024',
-        'projects.expo_desc':'معرض علوم الحاسوب السنوي. فاز مشروعنا CRAMT بالمرتبة الثانية.',
-        'projects.expo_ach1':'المرتبة 2 وجائزة 200 €','projects.expo_ach2':'NLP متعددة اللغات للغات محدودة الموارد','projects.expo_ach3':'بحث مع Christian Schuler وSeid Muhie Yimam وآخرين',
-        'projects.hack2_title':'AI: Applied – CHECK24 × Hackathon HH','projects.hack2_period':'CHECK24 · هامبورغ',
-        'projects.hack2_desc':'هاكاثون ذكاء اصطناعي مسائي. مشروعنا "Reality Filter" – ماسح للأخبار الكاذبة – نُفِّذ كإضافة Firefox.',
-        'projects.hack2_ach1':'إضافة Firefox "Reality Filter"','projects.hack2_ach2':'تحليل المنشورات بـ LLM لـ X/Twitter','projects.hack2_ach3':'كشف التحيز والتلاعب والمصادر المفقودة',
-        'projects.p2p_title':'vs-p2p-api','projects.p2p_period':'مشروع فريق • HAW هامبورغ',
-        'projects.p2p_desc':'واجهة برمجية لشبكة P2P طُوِّرت ضمن مشروع جامعي. التركيز على التواصل الموزّع وبنية النظير إلى نظير.',
-        'projects.acc_title':'🍪 AdCookie Clear','projects.acc_period':'إضافة Firefox • 2025',
-        'projects.acc_desc':'إضافة Firefox تُركّز على الخصوصية: تحجب الإعلانات وتزيل بانرات الكوكيز وترفض نوافذ الموافقة تلقائيًا.',
-        'projects.acc_ach1':'200+ نطاق إعلاني ومتتبِّع محجوب','projects.acc_ach2':'رفض تلقائي لبانرات الكوكيز بـ 7 لغات','projects.acc_ach3':'إزالة تتبع URL وترقية HTTPS',
-        'footer.copyright':'© 2026 رامان أحمد – جميع الحقوق محفوظة.',
-      }
-    };
-
+  const translations = {
+    de: {
+      'nav.home':'Startseite','nav.about':'Über mich','nav.research':'Forschung','nav.publications':'Publikationen','nav.projects':'Projekte','nav.interviews':'Interviews','nav.cv':'CV','nav.contact':'Kontakt',
+      'projects.title':'Aktuelle & abgeschlossene Projekte','projects.subtitle':'Überblick über meine Entwicklungs- und Forschungsprojekte.',
+      'projects.ongoing':'Laufend','projects.completed':'Abgeschlossen','projects.achievements':'Erfolge:',
+      'projects.thesis_title':'Bachelor-Thesis: Maschinelle Übersetzung','projects.thesis_period':'HAW Hamburg • 2021 – 2026','projects.thesis_desc':'Hybrider Ansatz zur maschinellen Übersetzung für die Kobani-Variante des Kurmanji. Fine-Tuning NLLB-200 – zwei öffentliche HuggingFace-Modelle.','projects.thesis_ach1':'Korpus-Aufbau für Kobani-Kurmanji','projects.thesis_ach2':'Fine-Tuning NLLB-200 (kob_Latn ↔ eng)','projects.thesis_ach3':'2 veröffentlichte HuggingFace-Modelle',
+      'projects.ickl_title':'ICKL-6 & ICKL-7 – Kurdische Dialektologie','projects.ickl_period':'ICKL-Konferenz • 2023 & Aug. 2025','projects.ickl_desc':'Forschungsbeiträge zur kurdischen Dialektologie – zwei Poster bei ICKL-6 und Präsentation bei ICKL-7.','projects.ickl_ach1':'ICKL-6 Poster: Analysis of Phonology and Morphology in the Kobani Dialect','projects.ickl_ach2':'ICKL-6 Poster: Towards a complete mapping of Kurdish Dialectology','projects.ickl_ach3':'ICKL-7 Präsentation: Dialectal Filtering (2025)',
+      'projects.expo_title':'base.camp EXPO 2024','projects.expo_period':'Universität Hamburg · 2024','projects.expo_desc':'Projekt CRAMT – Framework für Cross-Lingual NLP – gewann den zweiten Platz (200 €).','projects.expo_ach1':'2. Platz & 200 € Preisgeld','projects.expo_ach2':'Cross-Lingual NLP für Low-Resource-Sprachen','projects.expo_ach3':'Forschung mit Christian Schuler, Seid Muhie Yimam u. a.',
+      'projects.kurdaboard_title':'KurdaBoard – Offline-Kanban-Workspace','projects.kurdaboard_period':'Persönliches Projekt • 2025','projects.kurdaboard_desc':'Offline-first Kanban. Vanilla JavaScript, IndexedDB, CSS Custom Properties – kein Build-Schritt.','projects.kurdaboard_ach1':'Drag & Drop Kanban-Boards','projects.kurdaboard_ach2':'PWA – installierbar, 100 % offline','projects.kurdaboard_ach3':'JSON-Backup & ARIA Accessibility',
+      'projects.acc_title':'🍪 AdCookie Clear','projects.acc_period':'Firefox Browser Extension • 2025','projects.acc_desc':'Datenschutzorientierte Firefox-Extension. Cookie-Banner, Tracker und Ad-Domains – vollständig lokal.','projects.acc_ach1':'200+ blockierte Ad-Domains & Tracker','projects.acc_ach2':'Auto-Ablehnen von Cookie-Bannern in 7 Sprachen','projects.acc_ach3':'URL-Tracking-Entfernung & HTTPS Upgrade',
+      'projects.hack1_title':'Spring Hackathon mit CHECK24 💡','projects.hack1_period':'HAW Hamburg · 26. März 2024','projects.hack1_desc':'Teambasierter Hackathon mit CHECK24 – „Crazy Teaching" gewann den dritten Platz.','projects.hack1_ach1':'3. Platz mit Projekt „Crazy Teaching"','projects.hack1_ach2':'Teamarbeit & kreative Ideenfindung','projects.hack1_ach3':'Mentoring durch CHECK24-Expert:innen',
+      'projects.hack2_title':'AI: Applied – CHECK24 × Hackathon HH','projects.hack2_period':'CHECK24 · Hamburg','projects.hack2_desc':'KI-Hackathon: „Reality Filter" – Fake-News- & Bias-Scanner als Firefox-Extension.','projects.hack2_ach1':'Firefox-Extension „Reality Filter" entwickelt','projects.hack2_ach2':'LLM-gestützte Post-Analyse für X/Twitter','projects.hack2_ach3':'Erkennung von Bias, Manipulation & fehlenden Quellen',
+      'projects.p2p_title':'vs-p2p-api','projects.p2p_period':'Team-Projekt • HAW Hamburg','projects.p2p_desc':'P2P-Netzwerk-API im Rahmen eines Uni-Projekts.',
+      'footer.copyright':'© 2026 Raman Ahmad – Alle Rechte vorbehalten.',
+    },
+    en: {
+      'nav.home':'Home','nav.about':'About Me','nav.research':'Research','nav.publications':'Publications','nav.projects':'Projects','nav.interviews':'Interviews','nav.cv':'CV','nav.contact':'Contact',
+      'projects.title':'Current & Completed Projects','projects.subtitle':'Overview of my development and research projects.',
+      'projects.ongoing':'Ongoing','projects.completed':'Completed','projects.achievements':'Achievements:',
+      'projects.thesis_title':'Bachelor Thesis: Machine Translation','projects.thesis_desc':'Hybrid NLP approach for Kobani Kurmanji. Fine-tuned NLLB-200 – two public HuggingFace models.','projects.thesis_ach1':'Corpus building for Kobani Kurmanji','projects.thesis_ach2':'Fine-tuning NLLB-200 (kob_Latn ↔ eng)','projects.thesis_ach3':'2 published HuggingFace models',
+      'projects.ickl_title':'ICKL-6 & ICKL-7 – Kurdish Dialectology','projects.ickl_desc':'Research contributions – two posters at ICKL-6, presentation at ICKL-7.','projects.ickl_ach1':'ICKL-6 Poster: Phonology and Morphology of Kobani Dialect','projects.ickl_ach2':'ICKL-6 Poster: Mapping Kurdish Dialectology','projects.ickl_ach3':'ICKL-7 Talk: Dialectal Filtering (2025)',
+      'projects.expo_title':'base.camp EXPO 2024','projects.expo_period':'University of Hamburg · 2024','projects.expo_desc':'Project CRAMT – cross-lingual NLP framework – won 2nd place.','projects.expo_ach1':'2nd place & €200 prize','projects.expo_ach2':'Cross-lingual NLP for low-resource languages','projects.expo_ach3':'Research with Christian Schuler, Seid Muhie Yimam et al.',
+      'projects.kurdaboard_title':'KurdaBoard – Offline Kanban Workspace','projects.kurdaboard_period':'Side Project • 2025','projects.kurdaboard_desc':'Offline-first Kanban. Vanilla JS, IndexedDB, zero dependencies.','projects.kurdaboard_ach1':'Drag & drop Kanban boards','projects.kurdaboard_ach2':'PWA – installable, 100% offline','projects.kurdaboard_ach3':'JSON backup & ARIA accessibility',
+      'projects.acc_title':'🍪 AdCookie Clear','projects.acc_period':'Firefox Browser Extension • 2025','projects.acc_desc':'Privacy-focused Firefox extension. Runs entirely locally.','projects.acc_ach1':'200+ blocked ad domains & trackers','projects.acc_ach2':'Auto-rejects cookie banners in 7 languages','projects.acc_ach3':'URL tracking removal & HTTPS upgrade',
+      'projects.hack1_title':'Spring Hackathon with CHECK24 💡','projects.hack1_period':'HAW Hamburg · 26 March 2024','projects.hack1_desc':'Team hackathon with CHECK24 – "Crazy Teaching" won 3rd place.','projects.hack1_ach1':'3rd place with "Crazy Teaching"','projects.hack1_ach2':'Teamwork & creative ideation','projects.hack1_ach3':'Mentoring by CHECK24 experts',
+      'projects.hack2_title':'AI: Applied – CHECK24 × Hackathon HH','projects.hack2_period':'CHECK24 · Hamburg','projects.hack2_desc':'AI hackathon: "Reality Filter" – fake-news & bias scanner as Firefox extension.','projects.hack2_ach1':'Firefox extension "Reality Filter"','projects.hack2_ach2':'LLM-powered post analysis for X/Twitter','projects.hack2_ach3':'Bias, manipulation & missing source detection',
+      'projects.p2p_title':'vs-p2p-api','projects.p2p_period':'Team Project • HAW Hamburg','projects.p2p_desc':'P2P network API for distributed communication.',
+      'footer.copyright':'© 2026 Raman Ahmad – All rights reserved.',
+    },
+    ku: {'nav.home':'Mal','nav.about':'Li ser min','nav.research':'Lêkolîn','nav.publications':'Weşan','nav.projects':'Proje','nav.interviews':'Hevpeyivîn','nav.cv':'CV','nav.contact':'Têkilî','projects.title':'Projeyên Niha & Qediyayî','projects.subtitle':'Nêrîna giştî li ser projeyên min.','projects.ongoing':'Dewam dike','projects.completed':'Qediya','projects.achievements':'Destkeftî:','footer.copyright':'© 2026 Raman Ahmad – Hemû Mafên Parastî ne.'},
+    ckb: {'nav.home':'ماڵ','nav.about':'دەربارەی من','nav.research':'توێژینەوە','nav.publications':'بڵاوکراوەکان','nav.projects':'پڕۆژەکان','nav.interviews':'چاوپێکەوتنەکان','nav.cv':'CV','nav.contact':'پەیوەندی','projects.title':'پڕۆژەکانی ئێستا و تەواوکراوەکان','projects.subtitle':'چاوەڕوانی گشتی.','projects.ongoing':'بەردەوام','projects.completed':'تەواوکراو','projects.achievements':'دەستکەوتەکان:','footer.copyright':'© ٢٠٢٦ رەمان ئەحمەد – هەموو مافەکان پارێزراون.'},
+    ar: {'nav.home':'الرئيسية','nav.about':'عنّي','nav.research':'البحث','nav.publications':'المنشورات','nav.projects':'المشاريع','nav.interviews':'المقابلات','nav.cv':'السيرة الذاتية','nav.contact':'التواصل','projects.title':'المشاريع الحالية والمكتملة','projects.subtitle':'نظرة عامة على مشاريع التطوير والبحث.','projects.ongoing':'جارٍ','projects.completed':'مكتمل','projects.achievements':'الإنجازات:','footer.copyright':'© 2026 رامان أحمد – جميع الحقوق محفوظة.'}
+  };
   </script>
+
+  <script src="js/components.js"></script>
   <script src="js/i18n.js"></script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9d6bfc1ddb3b62eb',t:'MTc3MjU3NTk2OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
-  <!-- ══ SCROLL ANIMATIONS ══ -->
-  <style>
-    .reveal {
-      opacity: 0;
-      transform: translateY(32px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    /* stagger children */
-    .reveal-stagger > * {
-      opacity: 0;
-      transform: translateY(28px);
-      transition: opacity 0.5s ease, transform 0.5s ease;
-    }
-    .reveal-stagger.visible > *:nth-child(1) { opacity:1; transform:none; transition-delay: 0s; }
-    .reveal-stagger.visible > *:nth-child(2) { opacity:1; transform:none; transition-delay:.1s; }
-    .reveal-stagger.visible > *:nth-child(3) { opacity:1; transform:none; transition-delay:.2s; }
-    .reveal-stagger.visible > *:nth-child(4) { opacity:1; transform:none; transition-delay:.3s; }
-    .reveal-stagger.visible > *:nth-child(5) { opacity:1; transform:none; transition-delay:.4s; }
-    .reveal-stagger.visible > *:nth-child(6) { opacity:1; transform:none; transition-delay:.5s; }
-    .reveal-stagger.visible > *:nth-child(n+7) { opacity:1; transform:none; transition-delay:.6s; }
-
-    /* ── Back to top ── */
-    #back-to-top {
-      position: fixed;
-      bottom: 2rem;
-      right: 2rem;
-      z-index: 99;
-      width: 44px;
-      height: 44px;
-      background: #2563eb;
-      color: white;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 14px rgba(34,197,94,.45);
-      opacity: 0;
-      transform: translateY(12px);
-      transition: opacity .3s, transform .3s;
-      pointer-events: none;
-    }
-    #back-to-top.show {
-      opacity: 1;
-      transform: translateY(0);
-      pointer-events: auto;
-    }
-    #back-to-top:hover { background: #16a34a; }
-  </style>
-
-  <!-- ══ BACK TO TOP BUTTON ══ -->
-  <button id="back-to-top" aria-label="Nach oben scrollen">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/>
-    </svg>
-  </button>
-
-  <script>
-  // ── Scroll animations ──────────────────────────────────────────────
-  (function() {
-    var io = new IntersectionObserver(function(entries) {
-      entries.forEach(function(e) {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          io.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.08 });
-
-    document.querySelectorAll('.reveal, .reveal-stagger').forEach(function(el) {
-      io.observe(el);
-    });
-  })();
-
-  // ── Back to top ────────────────────────────────────────────────────
-  (function() {
-    var btn = document.getElementById('back-to-top');
-    window.addEventListener('scroll', function() {
-      if (window.scrollY > 400) btn.classList.add('show');
-      else btn.classList.remove('show');
-    });
-    btn.addEventListener('click', function() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  })();
-
-  // ── Active nav link ────────────────────────────────────────────────
-  (function() {
-    var page = location.pathname.split('/').pop() || 'index.html';
-    document.querySelectorAll('nav a[href], #mobile-sidebar a[href]').forEach(function(a) {
-      if (a.getAttribute('href') === page) {
-        a.classList.add('text-primary', 'font-semibold');
-        // add a subtle underline indicator on desktop
-        a.style.borderBottom = '2px solid #2563eb';
-        a.style.paddingBottom = '2px';
-      }
-    });
-  })();
-  </script>
-
 </body>
 </html>
